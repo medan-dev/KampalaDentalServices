@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kampala Dental Services</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="kds.jpg">
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- Cookie Consent -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+    <script>
+        window.addEventListener('load', function () {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#000"
+                    },
+                    "button": {
+                        "background": "#f1d600"
+                    }
+                },
+                "theme": "classic",
+                "content": {
+                    "message": "This website uses cookies to ensure you get the best experience on our website.",
+                    "dismiss": "Got it!",
+                    "link": "Learn more",
+                    "href": "#privacy-policy"
+                }
+            });
+        });
+    </script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+    <script>
+        "use strict"
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXXXXXX-X');
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container-A">
+            <div class="logo">
+                <img src="kds.jpg" alt="Dental Hospital Logo" />
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home"><i class="fas fa-home"></i>Home</a></li>
+                    <li><a href="#about"><i class="fas fa-user-md"></i>About</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i>Contact</a></li>
+                    <li><a href="#services"><i class="fas fa-concierge-bell"></i>Services</a></li>
+                </ul>
+            </nav>
+            <div class="social-links">
+                <a href="https://facebook.com/KampalaDentalServices" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/KampalaDentalServices" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/kampaladentalservices" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </header>
+    
+    <section id="home" class="hero">
+        <div class="slider">
+            <div class="slide" style="background-image: url('1.jpg')">
+                <h2 class="animate">Welcome to Kampala Dental Services</h2>
+                <p class="text">Eat well smile good</p>
+            </div>
+            <div class="slide" style="background-image: url('infra.jpg')">
+                <h2 class="animate">State-of-the-Art Equipment</h2>
+                <p class="text">Advanced technology for your dental health</p>
+            </div>
+            <div class="slide" style="background-image: url('2.jpg')">
+                <h2 class="animate">Experienced Dental Attention</h2>
+                <p class="text">Well-trained professionals to ensure your dental satisfaction</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Kampala Dental Services, we provide top-notch dental care with a focus on patient comfort and satisfaction.</p>
+        <ul>
+            <li><strong>Kampala Dental Services Bwaise:</strong> Bombo Road [Kubitaala]</li>
+            <li><strong>Kampala Dental Services Gayaza:</strong> Next to Akamwesi Shopping Mall</li>
+            <li><strong>Kampala Dental Services Urban Arcade:</strong> Nabweru Road</li>
+        </ul>
+        <div class="branch-map">
+            <div class="branch">
+                <h3>Kampala Dental Services Bwaise Bombo-Road Kubitaala <strong><b><em>[Head Office]</em></b></strong></h3>
+                <img src="kds.jpg" alt="Bwaise Branch">
+            </div>
+            <div class="branch">
+                <h3>Kampala Dental Services Gayaza-Road <strong><b><em>[Next to Akamwesi shopping mall]</em></b></strong></h3>
+                <img src="kds.jpg" alt="Gayaza Branch">
+            </div>
+            <div class="branch">
+                <h3>Kampala Dental Services Nabweru-Road <strong><b><em>[in Urban Arcade ]</em></b></strong></h3>
+                <img src="kds.jpg" alt="Nabweru Branch">
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service">
+                <img src="3.jpg" alt="Teeth Cleaning">
+                <h3>Teeth Cleaning</h3>
+                <p>Professional cleaning to keep your teeth healthy.</p>
+            </div>
+            <div class="service">
+               <img src="x.jpg" alt="">
+                <h3>Dental X-Rays</h3>
+                <p>Accurate and detailed imaging for better diagnosis.</p>
+            </div>
+            <div class="service">
+                <img src="download (1).jpg" alt="Cosmetic Dentistry" />
+                <h3>Cosmetic Dentistry</h3>
+                <p>Enhancing your smile with advanced cosmetic procedures.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Feel free to reach out to us with any questions or to schedule an appointment.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Name..." />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Email..." />
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required placeholder="Message..."></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <section id="advertisements">
+        <h2><i class="fas fa-ad"></i> Advertisements</h2>
+        <div class="ad-container">
+            <div class="ad">
+                <video controls autoplay muted loop>
+                    <source src="Mctech~hub.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Special Offer: Get 20% off on your first visit!</p>
+            </div>
+            <div class="ad">
+                <video controls autoplay muted loop>
+                    <source src="Mctech~hub.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Free consultation for new patients.</p>
+            </div>
+            <div class="ad">
+                <img src="kds.jpg" alt="Advertisement 3" />
+                <p>Check out our new orthodontic services!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2><i class="fas fa-star"></i> Testimonials</h2>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <img src="kds.jpg" alt="Samallie Namubiru">
+                <p class="testimonial-text">"Excellent service and friendly staff!" - Samallie Namubiru</p>
+            </div>
+            <div class="testimonial">
+                <img src="kds.jpg" alt="Nshuti Medan">
+                <p class="testimonial-text">"Highly recommend for all your dental needs." - Nshuti Medan</p>
+            </div>
+            <div class="testimonial">
+                <img src="kds.jpg" alt="Emily Johnson">
+                <p class="testimonial-text">"Professional and caring environment." - Emily Johnson</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="privacy-policy">
+        <h2>Privacy Policy</h2>
+        <p>At Kampala Dental Services, we are committed to protecting your privacy. This privacy policy explains how we collect, use, and safeguard your information.</p>
+        <h3>Information We Collect</h3>
+        <p>We collect information when you visit our site, register, place an order, subscribe to our newsletter, or fill out a form. The types of information collected may include your name, email address, phone number, and payment information.</p>
+        <h3>How We Use Your Information</h3>
+        <p>The information we collect may be used to personalize your experience, improve our website, process transactions, send periodic emails, and administer a contest, promotion, survey, or other site features.</p>
+        <h3>Third-Party Cookies</h3>
+        <p>We use third-party services like Google Analytics to help us understand our site visitors. These third-party services may place cookies on your browser. You can choose to have your computer warn you each time a cookie is being sent, or you can choose to turn off all cookies through your browser settings.</p>
+        <h3>Security</h3>
+        <p>We implement various security measures to maintain the safety of your personal information. Your information is contained behind secured networks and is only accessible by a limited number of persons who have special access rights to such systems and are required to keep the information confidential.</p>
+        <h3>Changes to Our Privacy Policy</h3>
+        <p>We may update our privacy policy from time to time. Any changes will be posted on this page. This policy was last modified on [Date].</p>
+        <h3>Contacting Us</h3>
+        <p>If there are any questions regarding this privacy policy, you may contact us using the information below:</p>
+        <address>
+            Kampala Dental Services<br>
+            Email: <a href="mailto:kampaladentalservices@gmail.com">kampaladentalservices@gmail.com</a><br>
+            Phone: +256775853799
+        </address>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Kampala Dental Services. All rights reserved.</p>
+    </footer>
+
+    <div class="floating-buttons">
+        <a href="https://wa.me/+256775853799" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="tel:+256775853799" class="phone"><i class="fas fa-phone"></i></a>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let index = 0;
+            const slides = document.querySelectorAll('.slide');
+            const totalSlides = slides.length;
+        
+            function showSlide() {
+                slides.forEach((slide, i) => {
+                    slide.style.transform = `translateX(${100 * (i - index)}%)`;
+                });
+            }
+        
+            function nextSlide() {
+                index = (index + 1) % totalSlides;
+                showSlide();
+            }
+        
+            setInterval(nextSlide, 5000); // Change slide every 5 seconds
+            showSlide();
+        });
+    </script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
