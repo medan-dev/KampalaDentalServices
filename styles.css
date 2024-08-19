@@ -15,14 +15,18 @@ body {
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
-    position: fixed;
     justify-content: space-between;
 }
 
 header {
     background: #007BFF;
     color: #fff;
+    position: fixed;
     padding: 10px 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
 }
 
 header .logo img {
@@ -45,11 +49,13 @@ nav ul li a {
     font-size: x-large;
     font-weight: 900;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: 1s ease;
 }
 
 nav ul li a:hover {
-    color: #f0f0f0;
+    background: rgb(221, 75, 22);
+        border: none;
+        border-radius: 6px;
 }
 
 .social-links {
@@ -350,12 +356,30 @@ form button:hover {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+    header{
+        background: #014031;
+        color: #fff;
+        position: fixed;
+        padding: 10px 0;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 999;
+    }
     nav ul {
         display: block;
         align-items: center
     }
     nav ul li a{
         font-size: small;
+        transition: 0.8s ease;
+    }
+
+    nav ul li a:hover{
+        background: orangered;
+        border: none;
+        padding: 3px;
+        border-radius: 3px;
     }
 
     .logo img{
@@ -366,6 +390,10 @@ form button:hover {
         margin-left: 10px;
         font-size: 15px;
         transition: color 0.3s;
+    }
+
+    .social-links a:hover{
+        color: #52f009;
     }
 
     .services-container,
@@ -389,4 +417,10 @@ form button:hover {
     .branch {
         flex: 1 1 100%;
     }
+}
+
+#privacy-policy h3{
+    color: #52f009;
+    font-weight: 900;
+    font-size: x-large;
 }
