@@ -21,6 +21,7 @@ body {
 header {
     background: #007BFF;
     color: #fff;
+    height: 55px;
     position: fixed;
     padding: 10px 0;
     top: 0;
@@ -46,7 +47,7 @@ nav ul li {
 
 nav ul li a {
     color: #fff;
-    font-size: x-large;
+    font-size: larger;
     font-weight: 600;
     text-decoration: none;
     transition: 1s ease;
@@ -77,6 +78,7 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
+    margin-top: 2vh;
     position: relative;
     height: 50vh;
     background: #007BFF;
