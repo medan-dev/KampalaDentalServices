@@ -114,8 +114,15 @@ nav ul li a:hover {
 .hero .slide h2{
   color: #fff;
     font-size: x-large;
+    font-weight: 800;
+    text-shadow: 3px 4px 5px #333;
+    }
+
+.hero .slide h2{
+  color: orangered;
+    font-size: large;
     font-weight: 400;
-    text-shadow: 3px 4px 5px solid #333;
+    text-shadow: 3px 4px 5px #333;
     }
 
 .hero .slide:nth-child(1) {
