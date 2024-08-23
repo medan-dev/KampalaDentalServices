@@ -442,3 +442,7 @@ form button:hover {
     font-weight: 900;
     font-size: x-large;
 }
+
+#privacy-policy p{
+    color: white;
+}
