@@ -437,12 +437,13 @@ form button:hover {
     }
 }
 
+#privacy-policy !p{
+    color: #fffff;
+}
+
 #privacy-policy h3{
     color: #52f009;
     font-weight: 900;
     font-size: x-large;
 }
 
-#privacy-policy p{
-    color: white;
-}
