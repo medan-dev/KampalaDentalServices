@@ -378,6 +378,7 @@ form button:hover {
         background: #014031;
         color: #fff;
         position: fixed;
+        height: 10vh;
         padding: 10px 0;
         top: 0;
         right: 0;
@@ -403,6 +404,10 @@ form button:hover {
     .logo img{
         height: 50px;
     }
+
+    #privacy-policy !p{
+    color: #fffff;
+}
 
     .social-links a {
         margin-left: 10px;
