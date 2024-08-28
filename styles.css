@@ -272,21 +272,24 @@ form button:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    background: blue;
+    text-shadow: 2px 3px 4px solid #333;
     justify-content: center;
     text-align: center;
 }
 
 .testimonial {
     flex: 1 1 calc(33.333% - 40px);
-    background: #fff;
+    background: #007BFF;
+    color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .testimonial img {
-    width: 80px;
-    height: 80px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     margin-bottom: 10px;
 }
@@ -372,6 +375,10 @@ form button:hover {
     margin-top: 20px;
 }
 
+#privacy-policy h3{
+    background: #333;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     header{
@@ -401,8 +408,8 @@ form button:hover {
         border-radius: 3px;
     }
 
-      !#privacy-policy p{
-    color: #fffff;
+      !#privacy-policy !p{
+    color: #fff;
 }
 
     .logo img{
@@ -443,7 +450,7 @@ form button:hover {
 }
 
 #privacy-policy !p{
-    color: #fffff;
+    color: #fff;
 }
 
 #privacy-policy h3{
