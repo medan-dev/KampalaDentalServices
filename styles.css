@@ -376,7 +376,7 @@ form button:hover {
 }
 
 #privacy-policy{
-    background: #333;
+    background: black;
 }
 
 /* Responsive Styles */
@@ -450,11 +450,11 @@ form button:hover {
 }
 
 #privacy-policy !p{
-    color: #fff;
+    color: white;
 }
 
 #privacy-policy h3{
-    color: #52f009;
+    color: yellow;
     font-weight: 900;
     font-size: x-large;
 }
