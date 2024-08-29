@@ -274,7 +274,7 @@ form button:hover {
     gap: 20px;
     font-size: larger;
     color: white;
-    background: skyblue;
+    background: #87CEEB;
     text-shadow: 2px 3px 4px solid #333;
     justify-content: center;
     text-align: center;
@@ -297,8 +297,8 @@ form button:hover {
 }
 
 .testimonial-text {
-    font-size: 16px;
-    color: #555;
+    font-size: 26px;
+    color: white;
 }
 
 .floating-buttons {
