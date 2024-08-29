@@ -272,7 +272,9 @@ form button:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    background: blue;
+    font-size: larger;
+    color: white;
+    background: skyblue;
     text-shadow: 2px 3px 4px solid #333;
     justify-content: center;
     text-align: center;
@@ -377,6 +379,10 @@ form button:hover {
 
 #privacy-policy{
     background: black;
+}
+
+address{
+    color: white;
 }
 
 /* Responsive Styles */
