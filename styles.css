@@ -447,6 +447,11 @@ address{
         font-size: smaller;
     }
 
+    .testimonial-text {
+    font-size: 20px;
+    color: white;
+}
+
     .service,
     .ad,
     .testimonial,
