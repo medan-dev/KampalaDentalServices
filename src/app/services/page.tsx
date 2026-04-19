@@ -69,7 +69,7 @@ export default function ServicesPage() {
             alt="State-of-the-art Dental Chair" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-primary/80 backdrop-blur-[1px]" />
+          <div className="absolute inset-0 bg-primary/70" />
         </div>
         <div className="page-hero-content relative z-10">
           <motion.div 
@@ -161,8 +161,8 @@ export default function ServicesPage() {
       <section className="section-padding bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-primary-dark p-8 md:p-16 text-center text-white relative overflow-hidden rounded-[2rem] z-10 shadow-xl">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-xl opacity-10" />
-            <div className="absolute bottom-0 left-0 w-48 h-48 bg-secondary/5 rounded-full blur-xl opacity-10" />
+            <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full opacity-10" />
+            <div className="absolute bottom-0 left-0 w-48 h-48 bg-secondary/5 rounded-full opacity-10" />
             
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">Need Immediate Assistance?</h2>
             <p className="text-white/70 max-w-2xl mx-auto mb-10 text-lg">

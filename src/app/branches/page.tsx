@@ -64,11 +64,16 @@ const item = {
 export default function BranchesPage() {
   return (
     <>
-      <section className="page-hero">
+      <section className="page-hero relative overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-primary/20" />
+          <img 
+            src="/clinic-exterior.jpg" 
+            alt="Kampala Dental Services Clinic Branch" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-primary/60" />
         </div>
-        <div className="page-hero-content">
+        <div className="page-hero-content relative z-10">
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
