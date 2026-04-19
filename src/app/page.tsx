@@ -67,8 +67,8 @@ export default function Home() {
       <section className="relative min-h-screen -mt-20 flex flex-col items-center justify-center overflow-hidden text-center pb-20">
         <div className="absolute inset-0">
           <img 
-            src="/hero_bg.png" 
-            alt="Premium Kampala Dental Clinic" 
+            src="/clinic-exterior.jpg" 
+            alt="Kampala Dental Services Clinic Exterior" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-primary/70" />

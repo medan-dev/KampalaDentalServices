@@ -62,8 +62,16 @@ export default function ServicesPage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="page-hero">
-        <div className="page-hero-content">
+      <section className="page-hero relative overflow-hidden">
+        <div className="absolute inset-0">
+          <img 
+            src="/clinic-chair.jpg" 
+            alt="State-of-the-art Dental Chair" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-primary/80 backdrop-blur-[2px]" />
+        </div>
+        <div className="page-hero-content relative z-10">
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}

@@ -61,10 +61,12 @@ export default function AboutPage() {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="aspect-[4/3] bg-neutral-light rounded-[32px] overflow-hidden border border-gray-100 shadow-inner">
-                <div className="w-full h-full bg-gradient-to-br from-primary/10 to-primary-dark/10 flex items-center justify-center">
-                  <Heart className="w-24 h-24 text-primary opacity-20" />
-                </div>
+              <div className="aspect-[4/3] bg-neutral-light rounded-[32px] overflow-hidden border border-gray-100 shadow-lg">
+                <img 
+                  src="/clinic-interior.jpg" 
+                  alt="Kampala Dental Services Clinic Interior" 
+                  className="w-full h-full object-cover" 
+                />
               </div>
               <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-secondary/10 rounded-full blur-3xl -z-10" />
             </motion.div>
