@@ -84,31 +84,41 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-display text-lg font-semibold text-white mb-5">Contact</h4>
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <Phone size={18} className="text-white mt-0.5 flex-shrink-0" />
-                <div>
-                  <p className="text-white/80">+256 702 555 000</p>
-                  <p className="text-white/80">+256 702 555 111</p>
-                </div>
-              </li>
-              <li className="flex items-center gap-3">
-                <Mail size={18} className="text-white flex-shrink-0" />
-                <span className="text-white/80">info@kampaladental.ug</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <MapPin size={18} className="text-white mt-0.5 flex-shrink-0" />
-                <span className="text-white/80">Kampala, Uganda</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <Clock size={18} className="text-white mt-0.5 flex-shrink-0" />
-                <div>
-                  <p className="text-white/80">Mon - Fri: 8:00 AM - 6:00 PM</p>
-                  <p className="text-white/80">Sat: 9:00 AM - 4:00 PM</p>
-                </div>
-              </li>
-            </ul>
+            <h4 className="font-display text-lg font-semibold text-white mb-5 text-center">Contact</h4>
+            {/* Two-column contact split: 3 items left, hours right */}
+            <div className="flex flex-row gap-6">
+              {/* Left: Phone, Email, Location */}
+              <ul className="space-y-4 flex-1">
+                <li className="flex items-start gap-2.5">
+                  <Phone size={16} className="text-white mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="text-white/80 text-sm">+256 702 555 000</p>
+                    <p className="text-white/80 text-sm">+256 702 555 111</p>
+                  </div>
+                </li>
+                <li className="flex items-center gap-2.5">
+                  <Mail size={16} className="text-white flex-shrink-0" />
+                  <span className="text-white/80 text-sm">info@kampaladental.ug</span>
+                </li>
+                <li className="flex items-start gap-2.5">
+                  <MapPin size={16} className="text-white mt-0.5 flex-shrink-0" />
+                  <span className="text-white/80 text-sm">Kampala, Uganda</span>
+                </li>
+              </ul>
+              {/* Right: Hours */}
+              <ul className="space-y-4 flex-1">
+                <li className="flex items-start gap-2.5">
+                  <Clock size={16} className="text-white mt-0.5 flex-shrink-0" />
+                  <div>
+                    <p className="text-white/80 text-sm font-medium">Opening Hours</p>
+                    <p className="text-white/70 text-xs mt-1">Mon – Fri</p>
+                    <p className="text-white/80 text-sm">8:00 AM – 6:00 PM</p>
+                    <p className="text-white/70 text-xs mt-2">Saturday</p>
+                    <p className="text-white/80 text-sm">9:00 AM – 4:00 PM</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
