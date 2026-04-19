@@ -127,7 +127,17 @@ export function Footer() {
 
         <div className="mt-12 pt-8 border-t border-white/20">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-white/60 text-sm">© {new Date().getFullYear()} Kampala Dental Services. All rights reserved.</p>
+            <p className="text-white/60 text-sm text-center md:text-left">
+              © {new Date().getFullYear()} Kampala Dental Services. All rights reserved. <br className="sm:hidden" />
+              <a
+                href="https://mctech-hubsystems.kesug.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-bold text-secondary hover:text-white transition-colors duration-300"
+              >
+                Developed by Mctech-hub Systems
+              </a>
+            </p>
             <div className="flex gap-6 text-sm text-white/60">
               <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
               <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
