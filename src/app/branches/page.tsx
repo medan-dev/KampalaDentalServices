@@ -10,8 +10,8 @@ const branches = [
     id: "Nabweru",
     name: "Nabweru Road Branch",
     address: "Nabweru Road, Kampala",
-    phone: "+256 702 555 000",
-    whatsapp: "256702555000",
+    phone: "+256 700 593 479",
+    whatsapp: "256700593479",
     coordinates: "0.3476,32.5825",
     hours: [
       { day: "Monday - Friday", time: "8:00 AM - 6:00 PM" },
@@ -23,8 +23,8 @@ const branches = [
     id: "bwaise",
     name: "Bwaise Branch",
     address: "Near Seroma Hardware, Bwaise, Kampala",
-    phone: "+256 702 555 111",
-    whatsapp: "256702555111",
+    phone: "+256 775 953 799",
+    whatsapp: "256775953799",
     coordinates: "0.3625,32.5489",
     hours: [
       { day: "Monday - Friday", time: "8:00 AM - 6:00 PM" },
@@ -36,8 +36,8 @@ const branches = [
     id: "gayaza",
     name: "Gayaza Road Branch",
     address: "Near Akamwesi, Opposite Hardware World, Gayaza Road",
-    phone: "+256 702 555 222",
-    whatsapp: "256702555222",
+    phone: "+256 700 593 479",
+    whatsapp: "256700593479",
     coordinates: "0.3892,32.6111",
     hours: [
       { day: "Monday - Friday", time: "8:00 AM - 6:00 PM" },
@@ -129,10 +129,10 @@ export default function BranchesPage() {
                             {branch.phone}
                           </a>
                           <a
-                            href="mailto:info@kampaladental.ug"
+                            href="mailto:info@kampaladentalservices.com"
                             className="block text-neutral hover:text-primary transition-colors font-medium break-all"
                           >
-                            info@kampaladental.ug
+                            info@kampaladentalservices.com
                           </a>
                         </div>
                         <a
@@ -213,7 +213,7 @@ export default function BranchesPage() {
               className="btn-primary text-lg px-10 py-4 rounded-full border-none shadow-xl"
             >
               <Phone size={20} />
-              Call +256 702 555 000
+              Call +256 700 593 479
             </a>
           </motion.div>
         </div>

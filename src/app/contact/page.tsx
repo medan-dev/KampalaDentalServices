@@ -17,9 +17,9 @@ const contactSchema = z.object({
 type ContactFormData = z.infer<typeof contactSchema>;
 
 const branches = [
-  { name: "Najjera Road Branch", phone: "+256 702 555 000", address: "Najjera Road, Kampala" },
-  { name: "Bwaise Branch", phone: "+256 702 555 111", address: "Near Semwogerere/Adweya, Bwaise" },
-  { name: "Gayaza Road Branch", phone: "+256 702 555 222", address: "Near Akamwesi, Gayaza Road" },
+  { name: "Najjera Road Branch", phone: "+256 700 593 479", address: "Najjera Road, Kampala" },
+  { name: "Bwaise Branch", phone: "+256 775 953 799", address: "Near Semwogerere/Adweya, Bwaise" },
+  { name: "Gayaza Road Branch", phone: "+256 700 593 479", address: "Near Akamwesi, Gayaza Road" },
 ];
 
 export default function ContactPage() {
@@ -204,10 +204,10 @@ export default function ContactPage() {
                     <div>
                       <h4 className="font-display font-bold text-primary text-lg">Email</h4>
                       <a
-                        href="mailto:info@kampaladental.ug"
+                        href="mailto:info@kampaladentalservices.com"
                         className="text-primary font-bold hover:underline"
                       >
-                        info@kampaladental.ug
+                        info@kampaladentalservices.com
                       </a>
                     </div>
                   </div>
@@ -293,10 +293,10 @@ export default function ContactPage() {
                 className="btn-primary text-lg px-8 py-4 rounded-full border-none shadow-lg"
               >
                 <Phone size={20} />
-                Call +256 702 555 000
+                Call +256 700 593 479
               </a>
               <a
-                href="https://wa.me/256702555000"
+                href="https://wa.me/256700593479"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-green-500 text-white font-bold rounded-full hover:bg-green-600 transition-all shadow-xl shadow-green-500/20"

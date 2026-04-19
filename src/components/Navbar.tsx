@@ -71,7 +71,7 @@ export function Navbar() {
               className="flex items-center gap-2 transition-colors text-gray-600 hover:text-primary"
             >
               <Phone size={18} className="text-primary" />
-              <span className="text-sm font-medium">+256 702 555 000</span>
+              <span className="text-sm font-medium">+256 700 593 479</span>
             </a>
             <Link href="/appointments" className="btn-primary py-2.5 px-6 rounded-full shadow-md">
               Book Now
@@ -115,7 +115,7 @@ export function Navbar() {
                     className="flex items-center justify-center gap-2 py-3 border-2 border-primary text-primary rounded-lg font-bold"
                   >
                     <Phone size={18} />
-                    +256 702 555 000
+                    +256 700 593 479
                   </a>
                   <Link
                     href="/appointments"

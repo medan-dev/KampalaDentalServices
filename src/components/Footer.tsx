@@ -95,13 +95,13 @@ export function Footer() {
                 <li className="flex items-start gap-2.5">
                   <Phone size={16} className="text-white mt-0.5 flex-shrink-0" />
                   <div>
-                    <p className="text-white/80 text-sm">+256 702 555 000</p>
-                    <p className="text-white/80 text-sm">+256 702 555 111</p>
+                    <p className="text-white/80 text-sm">+256 700 593 479</p>
+                    <p className="text-white/80 text-sm">+256 775 953 799</p>
                   </div>
                 </li>
                 <li className="flex items-center gap-2.5">
                   <Mail size={16} className="text-white flex-shrink-0" />
-                  <span className="text-white/80 text-sm">info@kampaladental.ug</span>
+                  <span className="text-white/80 text-sm">info@kampaladentalservices.com</span>
                 </li>
                 <li className="flex items-start gap-2.5">
                   <MapPin size={16} className="text-white mt-0.5 flex-shrink-0" />

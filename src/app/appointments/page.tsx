@@ -130,7 +130,7 @@ function AppointmentsForm() {
           <div>
             <h3 className="font-medium text-red-800">Something went wrong</h3>
             <p className="text-red-700 text-sm mt-1">
-              Please try again or contact us directly at +256 702 555 000.
+              Please try again or contact us directly at +256 700 593 479.
             </p>
           </div>
         </motion.div>
@@ -359,10 +359,10 @@ export default function AppointmentsPage() {
                 Prefer to book over the phone? Our team is available.
               </p>
               <a
-                href="tel:+256702555000"
+                href="tel:+256700593479"
                 className="text-primary font-bold text-lg hover:underline"
               >
-                +256 702 555 000
+                +256 700 593 479
               </a>
             </motion.div>
 

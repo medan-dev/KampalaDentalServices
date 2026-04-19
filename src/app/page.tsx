@@ -39,19 +39,19 @@ const branches = [
   { 
     name: "Najjera Road", 
     address: "Najjera Road, Kampala", 
-    phone: "+256 702 555 000",
+    phone: "+256 700 593 479",
     details: "Main clinical center with advanced surgical facilities."
   },
   { 
     name: "Bwaise", 
     address: "Near Semwogerere/Adweya, Bwaise, Kampala", 
-    phone: "+256 702 555 111",
+    phone: "+256 775 953 799",
     details: "Expert general dentistry and pediatric care."
   },
   { 
     name: "Gayaza Road", 
     address: "Near Akamwesi, Opposite Adweya World, Gayaza Road", 
-    phone: "+256 702 555 222",
+    phone: "+256 700 593 479",
     details: "Cosmetic dentistry and orthodontic specialist center."
   },
 ];
