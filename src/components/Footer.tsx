@@ -24,12 +24,12 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
-              <div className="relative w-14 h-14">
+              <div className="relative w-14 h-14 bg-white rounded-xl p-1 flex-shrink-0">
                 <Image 
                   src="/logo.png" 
                   alt="Kampala Dental Services Logo" 
                   fill
-                  className="object-contain mix-blend-multiply brightness-0 invert" 
+                  className="object-contain" 
                 />
               </div>
               <div>
