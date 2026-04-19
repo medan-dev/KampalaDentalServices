@@ -67,8 +67,8 @@ export default function Home() {
       <section className="relative min-h-screen -mt-20 flex flex-col items-center justify-center overflow-hidden text-center pb-20">
         <div className="absolute inset-0">
           <img 
-            src="/clinic-exterior.jpg" 
-            alt="Kampala Dental Services Clinic Exterior" 
+            src="/hero-main.jpg" 
+            alt="Kampala Dental Services Professional Clinic" 
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-primary/70" />
@@ -94,7 +94,7 @@ export default function Home() {
               <Link href="/appointments" className="btn-primary text-lg px-10 py-4 shadow-xl">
                 Book Appointment <ArrowRight size={20} />
               </Link>
-              <Link href="/services" className="px-10 py-4 bg-white/10 backdrop-blur-md text-white font-semibold rounded-full hover:bg-white/20 transition-all border border-white/20">
+              <Link href="/services" className="px-10 py-4 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-full hover:bg-white/20 transition-all border border-white/20">
                 Our Services
               </Link>
             </div>
@@ -294,7 +294,7 @@ export default function Home() {
               <motion.div 
                 key={index} 
                 variants={item}
-                className="p-6 bg-white/10 backdrop-blur-xl rounded-[32px] border border-white/20 hover:bg-white/20 transition-colors"
+                className="p-6 bg-white/10 backdrop-blur-md rounded-[32px] border border-white/20 hover:bg-white/20 transition-colors"
               >
                 <div className="flex gap-1 mb-4">{[...Array(testimonial.rating)].map((_, i) => (<Star key={i} size={18} className="fill-yellow-400 text-yellow-400" />))}</div>
                 <p className="text-white mb-4 italic">&ldquo;{testimonial.text}&rdquo;</p>

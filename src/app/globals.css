@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .glass-card {
-    @apply bg-white/90 backdrop-blur-md rounded-[2rem] p-8 shadow-xl border border-white/40 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 hover:bg-white;
+    @apply bg-white/90 backdrop-blur-sm rounded-[2rem] p-8 shadow-xl border border-white/40 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 hover:bg-white;
   }
 
   .section-padding {
