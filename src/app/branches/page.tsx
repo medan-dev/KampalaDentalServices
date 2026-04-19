@@ -2,7 +2,8 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Phone, MapPin, Clock, MessageCircle, Calendar } from "lucide-react";
+import { Phone, MapPin, Clock, Calendar } from "lucide-react";
+import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 import { SectionDivider } from "@/components/SectionDivider";
 
 const branches = [
@@ -141,7 +142,7 @@ export default function BranchesPage() {
                           rel="noopener noreferrer"
                           className="inline-flex items-center gap-2 text-green-600 font-bold hover:underline"
                         >
-                          <MessageCircle size={18} /> Chat on WhatsApp
+                          <WhatsAppIcon size={18} /> Chat on WhatsApp
                         </a>
                       </div>
 

@@ -5,7 +5,8 @@ import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { Phone, Mail, MapPin, Clock, MessageCircle, Send, CheckCircle, Loader2 } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Send, CheckCircle, Loader2 } from "lucide-react";
+import { WhatsAppIcon } from "@/components/WhatsAppIcon";
 import { SectionDivider } from "@/components/SectionDivider";
 
 const contactSchema = z.object({
@@ -214,7 +215,7 @@ export default function ContactPage() {
 
                   <div className="flex items-start gap-4 p-5 rounded-[2rem] hover:bg-neutral-light transition-colors group">
                     <div className="w-14 h-14 bg-green-50 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-green-500 group-hover:text-white transition-all">
-                      <MessageCircle className="w-7 h-7 text-green-600 group-hover:text-white" />
+                      <WhatsAppIcon className="w-7 h-7 text-green-600 group-hover:text-white" />
                     </div>
                     <div>
                       <h4 className="font-display font-bold text-primary text-lg">WhatsApp</h4>
@@ -301,7 +302,7 @@ export default function ContactPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-green-500 text-white font-bold rounded-full hover:bg-green-600 transition-all shadow-xl shadow-green-500/20"
               >
-                <MessageCircle size={20} />
+                <WhatsAppIcon size={20} />
                 WhatsApp Us
               </a>
             </div>

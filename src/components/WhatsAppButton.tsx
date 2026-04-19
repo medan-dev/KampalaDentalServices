@@ -1,10 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MessageCircle } from "lucide-react";
+import { WhatsAppIcon } from "./WhatsAppIcon";
 
 export function WhatsAppButton() {
-  const whatsappNumber = "256702555000";
+  const whatsappNumber = "256700593479";
   const message = "Hello! I'm interested in booking an appointment.";
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
@@ -19,7 +19,7 @@ export function WhatsAppButton() {
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >
-      <MessageCircle size={28} />
+      <WhatsAppIcon size={28} />
     </motion.a>
   );
 }
