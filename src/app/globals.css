@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #0D7377;
+  --primary-dark: #095456;
+  --secondary: #14FFEC;
+  --background: #ffffff;
+  --accent: #FF6B35;
+  --neutral-dark: #1A1A2E;
+  --neutral: #4A4A68;
+  --neutral-light: #F7F7F9;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+  background-color: var(--background);
+  color: var(--neutral);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+@layer components {
+  /* Ultra-smooth Animated Buttons */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white font-bold rounded-full transition-all duration-500 hover:bg-primary-dark hover:shadow-[0_8px_30px_rgb(13,115,119,0.3)] hover:-translate-y-1 active:translate-y-0;
+  }
+  
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-8 py-4 bg-secondary text-neutral-dark font-bold rounded-full transition-all duration-500 hover:bg-[#0fd6c5] hover:shadow-[0_8px_30px_rgb(20,255,236,0.3)] hover:-translate-y-1 active:translate-y-0;
+  }
+  
+  .btn-accent {
+    @apply inline-flex items-center justify-center gap-2 px-8 py-4 bg-accent text-white font-bold rounded-full transition-all duration-500 hover:bg-accent-dark hover:shadow-[0_8px_30px_rgb(255,107,53,0.3)] hover:-translate-y-1 active:translate-y-0;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-primary text-primary font-bold rounded-full transition-all duration-500 hover:bg-primary hover:text-white hover:shadow-[0_8px_30px_rgb(13,115,119,0.3)] hover:-translate-y-1 active:translate-y-0;
+  }
+
+  /* Universal Smooth Card Animation */
+  .curved-card {
+    @apply rounded-[2rem] transition-all duration-500 hover:shadow-[0_20px_40px_rgb(0,0,0,0.06)] hover:-translate-y-2 border border-transparent hover:border-primary/20 relative overflow-hidden bg-white;
+  }
+
+  .glass-card {
+    @apply bg-white/90 backdrop-blur-md rounded-[2rem] p-8 shadow-xl border border-white/40 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 hover:bg-white;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-20 lg:py-24;
+  }
+
+  .font-display {
+    font-family: var(--font-playfair), Georgia, serif;
+  }
+
+  .font-heading {
+    font-family: var(--font-playfair), Georgia, serif;
+  }
+
+  .font-body {
+    font-family: var(--font-dm-sans), system-ui, sans-serif;
+  }
+
+  .page-hero {
+    @apply relative -mt-20 pt-[9rem] pb-[8rem] md:pt-[13rem] md:pb-[10rem] overflow-hidden bg-dark min-h-[50vh] md:min-h-[65vh] flex flex-col justify-center;
+  }
+
+  .page-hero-content {
+    @apply relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center;
+  }
+  
+  .section-divider {
+    @apply w-full h-auto block relative z-20;
+  }
+
+}

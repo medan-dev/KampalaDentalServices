@@ -1,0 +1,124 @@
+"use client";
+
+import Link from "next/link";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
+import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Twitter } from "lucide-react";
+import { SectionDivider } from "./SectionDivider";
+
+export function Footer() {
+  const pathname = usePathname();
+  
+  // Determine the background color of the last section of the current page
+  const topColor = 
+    pathname === "/branches" || pathname === "/contact" ? "#F7F7F9" : // Ends in light gray
+    "#ffffff"; // All other pages end in white
+
+  return (
+    <footer className="bg-neutral-dark text-white/80 relative">
+      {topColor !== "#1A1A2E" && (
+        <SectionDivider color={topColor} position="top" />
+      )}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 pt-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+          <div className="lg:col-span-1">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="drop-shadow-md relative w-14 h-14">
+                <Image 
+                  src="/logo.png" 
+                  alt="Kampala Dental Services Logo" 
+                  fill
+                  className="object-contain" 
+                />
+              </div>
+              <div>
+                <span className="font-display text-xl font-bold text-white">Kampala</span>
+                <span className="font-display text-xl font-bold text-white"> Dental</span>
+              </div>
+            </div>
+            <p className="text-sm text-white/70 mb-6 leading-relaxed">
+              Your trusted partner for premium dental care in Uganda. We create beautiful smiles with modern technology.
+            </p>
+            <div className="flex gap-3">
+              <a href="#" className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center hover:bg-white/30 transition-colors">
+                <Facebook size={18} />
+              </a>
+              <a href="#" className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center hover:bg-white/30 transition-colors">
+                <Instagram size={18} />
+              </a>
+              <a href="#" className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center hover:bg-white/30 transition-colors">
+                <Twitter size={18} />
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h4 className="font-display text-lg font-semibold text-white mb-5">Quick Links</h4>
+<ul className="space-y-3">
+              {[
+                { label: "Home", href: "/" },
+                { label: "About Us", href: "/about" },
+                { label: "Services", href: "/services" },
+                { label: "Locations", href: "/branches" },
+                { label: "Contact", href: "/contact" },
+              ].map((item) => (
+                <li key={item.label}>
+                  <Link href={item.href} className="text-white/80 hover:text-white text-sm transition-colors">{item.label}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-display text-lg font-semibold text-white mb-5">Services</h4>
+            <ul className="space-y-3">
+              {["General Dentistry", "Cosmetic Dentistry", "Orthodontics", "Dental Implants", "Pediatric Dentistry", "Root Canal"].map((item) => (
+                <li key={item}>
+                  <Link href="/services" className="text-white/80 hover:text-white text-sm transition-colors">{item}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-display text-lg font-semibold text-white mb-5">Contact</h4>
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3">
+                <Phone size={18} className="text-white mt-0.5 flex-shrink-0" />
+                <div>
+                  <p className="text-white/80">+256 702 555 000</p>
+                  <p className="text-white/80">+256 702 555 111</p>
+                </div>
+              </li>
+              <li className="flex items-center gap-3">
+                <Mail size={18} className="text-white flex-shrink-0" />
+                <span className="text-white/80">info@kampaladental.ug</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <MapPin size={18} className="text-white mt-0.5 flex-shrink-0" />
+                <span className="text-white/80">Kampala, Uganda</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <Clock size={18} className="text-white mt-0.5 flex-shrink-0" />
+                <div>
+                  <p className="text-white/80">Mon - Fri: 8:00 AM - 6:00 PM</p>
+                  <p className="text-white/80">Sat: 9:00 AM - 4:00 PM</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="mt-12 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-white/60 text-sm">© {new Date().getFullYear()} Kampala Dental Services. All rights reserved.</p>
+            <div className="flex gap-6 text-sm text-white/60">
+              <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+              <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
