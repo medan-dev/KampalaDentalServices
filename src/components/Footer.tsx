@@ -16,7 +16,7 @@ export function Footer() {
 
   return (
     <footer className="bg-neutral-dark text-white/80 relative">
-      {topColor !== "#1A1A2E" && (
+      {topColor && (
         <SectionDivider color={topColor} position="top" />
       )}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 pt-24">
