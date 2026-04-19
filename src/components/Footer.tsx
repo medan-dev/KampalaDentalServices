@@ -52,32 +52,35 @@ export function Footer() {
             </div>
           </div>
 
-          <div>
-            <h4 className="font-display text-lg font-semibold text-white mb-5">Quick Links</h4>
-<ul className="space-y-3">
-              {[
-                { label: "Home", href: "/" },
-                { label: "About Us", href: "/about" },
-                { label: "Services", href: "/services" },
-                { label: "Locations", href: "/branches" },
-                { label: "Contact", href: "/contact" },
-              ].map((item) => (
-                <li key={item.label}>
-                  <Link href={item.href} className="text-white/80 hover:text-white text-sm transition-colors">{item.label}</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+          {/* Quick Links + Services: side-by-side on mobile, separate grid cols on md+ */}
+          <div className="flex flex-row gap-6 md:contents">
+            <div className="flex-1">
+              <h4 className="font-display text-lg font-semibold text-white mb-5">Quick Links</h4>
+              <ul className="space-y-3">
+                {[
+                  { label: "Home", href: "/" },
+                  { label: "About Us", href: "/about" },
+                  { label: "Services", href: "/services" },
+                  { label: "Locations", href: "/branches" },
+                  { label: "Contact", href: "/contact" },
+                ].map((item) => (
+                  <li key={item.label}>
+                    <Link href={item.href} className="text-white/80 hover:text-white text-sm transition-colors">{item.label}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-          <div>
-            <h4 className="font-display text-lg font-semibold text-white mb-5">Services</h4>
-            <ul className="space-y-3">
-              {["General Dentistry", "Cosmetic Dentistry", "Orthodontics", "Dental Implants", "Pediatric Dentistry", "Root Canal"].map((item) => (
-                <li key={item}>
-                  <Link href="/services" className="text-white/80 hover:text-white text-sm transition-colors">{item}</Link>
-                </li>
-              ))}
-            </ul>
+            <div className="flex-1">
+              <h4 className="font-display text-lg font-semibold text-white mb-5">Services</h4>
+              <ul className="space-y-3">
+                {["General Dentistry", "Cosmetic Dentistry", "Orthodontics", "Dental Implants", "Pediatric Dentistry", "Root Canal"].map((item) => (
+                  <li key={item}>
+                    <Link href="/services" className="text-white/80 hover:text-white text-sm transition-colors">{item}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
           <div>
