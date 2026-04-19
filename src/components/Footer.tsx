@@ -24,12 +24,12 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
-              <div className="drop-shadow-md relative w-14 h-14">
+              <div className="relative w-14 h-14">
                 <Image 
                   src="/logo.png" 
                   alt="Kampala Dental Services Logo" 
                   fill
-                  className="object-contain" 
+                  className="object-contain mix-blend-multiply brightness-0 invert" 
                 />
               </div>
               <div>
@@ -56,8 +56,8 @@ export function Footer() {
           </div>
 
           {/* Quick Links + Services: side-by-side on mobile, separate grid cols on md+ */}
-          <div className="flex flex-row gap-6 md:contents">
-            <div className="flex-1">
+          <div className="flex flex-row gap-8 md:contents">
+            <div className="flex-1 px-2 md:px-0">
               <h4 className="font-display text-lg font-semibold text-white mb-5">Quick Links</h4>
               <ul className="space-y-3">
                 {[
@@ -74,7 +74,7 @@ export function Footer() {
               </ul>
             </div>
 
-            <div className="flex-1">
+            <div className="flex-1 px-2 md:px-0">
               <h4 className="font-display text-lg font-semibold text-white mb-5">Services</h4>
               <ul className="space-y-3">
                 {["General Dentistry", "Cosmetic Dentistry", "Orthodontics", "Dental Implants", "Pediatric Dentistry", "Root Canal"].map((item) => (
