@@ -37,9 +37,9 @@ export default function AboutPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            <span className="text-secondary font-bold text-sm uppercase tracking-wider">About Us</span>
+            <span className="text-white/70 font-bold text-sm uppercase tracking-wider">About Us</span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mt-4 mb-6">
-              Modern Excellence in <span className="text-secondary">Dental Care</span>
+              Modern Excellence in <span className="text-white/90 italic">Dental Care</span>
             </h1>
             <p className="text-gray-300 max-w-3xl mx-auto text-lg leading-relaxed">
               Serving Kampala for over 15 years with a commitment to clinical excellence,
@@ -169,7 +169,7 @@ export default function AboutPage() {
       {/* CTA Section */}
       <section className="section-padding bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-[#1A1A2E] p-8 md:p-16 text-center text-white relative overflow-hidden rounded-[2.5rem] z-10 shadow-xl">
+          <div className="bg-primary-dark p-8 md:p-16 text-center text-white relative overflow-hidden rounded-[2.5rem] z-10 shadow-xl">
             <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl opacity-10" />
             <div className="absolute bottom-0 left-0 w-48 h-48 bg-secondary/5 rounded-full blur-3xl opacity-10" />
             
@@ -181,7 +181,7 @@ export default function AboutPage() {
               <a href="/appointments" className="btn-secondary px-8 py-4 rounded-full font-bold">
                 Book Your Visit <ArrowRight size={20} className="inline ml-2" />
               </a>
-              <a href="/contact" className="btn-outline border-white text-white hover:bg-white hover:text-primary-dark px-8 py-4 rounded-full font-bold">
+              <a href="/contact" className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-white/60 text-white font-bold rounded-full transition-all duration-500 hover:bg-white hover:text-primary font-bold hover:-translate-y-1">
                 Contact Us
               </a>
             </div>

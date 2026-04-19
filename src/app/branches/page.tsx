@@ -65,7 +65,7 @@ export default function BranchesPage() {
     <>
       <section className="page-hero">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-dark/90" />
+          <div className="absolute inset-0 bg-primary/20" />
         </div>
         <div className="page-hero-content">
           <motion.div 
@@ -73,9 +73,9 @@ export default function BranchesPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            <span className="text-secondary font-bold text-sm uppercase tracking-wider">Our Locations</span>
+            <span className="text-white/70 font-bold text-sm uppercase tracking-wider">Our Locations</span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mt-4 mb-6">
-              Visit Us at Any <span className="text-secondary">Branch</span>
+              Visit Us at Any <span className="text-white/90 italic">Branch</span>
             </h1>
             <p className="text-gray-300 max-w-3xl mx-auto text-lg leading-relaxed">
               With three convenient locations across Kampala, quality dental care
@@ -108,7 +108,7 @@ export default function BranchesPage() {
                         <MapPin className="w-7 h-7 text-white" />
                       </div>
                       <div>
-                        <h3 className="text-3xl font-display font-bold text-secondary">
+                        <h3 className="text-3xl font-display font-bold text-primary">
                           {branch.name}
                         </h3>
                         <p className="text-neutral font-medium mt-1">{branch.address}</p>
@@ -117,7 +117,7 @@ export default function BranchesPage() {
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-10">
                       <div className="space-y-4">
-                        <h4 className="font-display font-semibold text-secondary flex items-center gap-2 text-lg">
+                        <h4 className="font-display font-semibold text-primary flex items-center gap-2 text-lg">
                           <Phone size={20} className="text-primary" />
                           Contact
                         </h4>
@@ -146,7 +146,7 @@ export default function BranchesPage() {
                       </div>
 
                       <div className="space-y-4">
-                        <h4 className="font-display font-semibold text-secondary flex items-center gap-2 text-lg">
+                        <h4 className="font-display font-semibold text-primary flex items-center gap-2 text-lg">
                           <Clock size={20} className="text-primary" />
                           Hours
                         </h4>
@@ -157,7 +157,7 @@ export default function BranchesPage() {
                               className="flex justify-between text-sm border-b border-gray-100 pb-1"
                             >
                               <span className="text-neutral">{h.day}</span>
-                              <span className="text-secondary font-bold">
+                              <span className="text-primary font-bold">
                                 {h.time}
                               </span>
                             </div>
@@ -175,7 +175,7 @@ export default function BranchesPage() {
                     </Link>
                   </div>
 
-                  <div className="bg-neutral-dark/5 min-h-[350px] lg:min-h-full">
+                  <div className="bg-primary/5 min-h-[350px] lg:min-h-full">
                     <iframe
                       src={`https://maps.google.com/maps?q=${encodeURIComponent(branch.address)}&t=&z=15&ie=UTF8&iwloc=&output=embed`}
                       width="100%"
@@ -201,7 +201,7 @@ export default function BranchesPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl font-display font-bold text-secondary mb-4">
+            <h2 className="text-4xl font-display font-bold text-primary mb-4">
               Need Help Finding Us?
             </h2>
             <p className="text-neutral mb-10 max-w-2xl mx-auto leading-relaxed">

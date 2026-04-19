@@ -71,7 +71,7 @@ export default function Home() {
             alt="Premium Kampala Dental Clinic" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-dark/60" />
+          <div className="absolute inset-0 bg-primary/70" />
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-32 flex flex-col items-center">

@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 px-8 py-4 bg-secondary text-neutral-dark font-bold rounded-full transition-all duration-500 hover:bg-[#0fd6c5] hover:shadow-[0_8px_30px_rgb(20,255,236,0.3)] hover:-translate-y-1 active:translate-y-0;
+    @apply inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-primary font-bold rounded-full transition-all duration-500 hover:bg-neutral-light hover:shadow-[0_8px_30px_rgb(255,255,255,0.2)] hover:-translate-y-1 active:translate-y-0;
   }
   
   .btn-accent {
@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .page-hero {
-    @apply relative -mt-20 pt-[9rem] pb-[8rem] md:pt-[13rem] md:pb-[10rem] overflow-hidden bg-dark min-h-[50vh] md:min-h-[65vh] flex flex-col justify-center;
+    @apply relative -mt-20 pt-[9rem] pb-[8rem] md:pt-[13rem] md:pb-[10rem] overflow-hidden bg-primary min-h-[50vh] md:min-h-[65vh] flex flex-col justify-center;
   }
 
   .page-hero-content {

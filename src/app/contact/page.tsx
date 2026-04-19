@@ -52,7 +52,7 @@ export default function ContactPage() {
     <>
       <section className="page-hero">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-dark/90" />
+          <div className="absolute inset-0 bg-primary/20" />
         </div>
         <div className="page-hero-content">
           <motion.div 
@@ -60,9 +60,9 @@ export default function ContactPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            <span className="text-secondary font-bold text-sm uppercase tracking-wider">Contact Us</span>
+            <span className="text-white/70 font-bold text-sm uppercase tracking-wider">Contact Us</span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mt-4 mb-6">
-              Get In <span className="text-secondary">Touch</span>
+              Get In <span className="text-white/90 italic">Touch</span>
             </h1>
             <p className="text-gray-300 max-w-3xl mx-auto text-lg leading-relaxed">
               Have a question or need more information? We'd love to hear from you.
@@ -82,7 +82,7 @@ export default function ContactPage() {
               viewport={{ once: true }}
               className="rounded-[2.5rem] p-8 md:p-12 bg-neutral-light/30 border-none"
             >
-              <h2 className="text-3xl font-display font-bold text-secondary mb-8">
+              <h2 className="text-3xl font-display font-bold text-primary mb-8">
                 Send Us a Message
               </h2>
               
@@ -172,7 +172,7 @@ export default function ContactPage() {
               className="space-y-12"
             >
               <div>
-                <h2 className="text-3xl font-display font-bold text-secondary mb-8">
+                <h2 className="text-3xl font-display font-bold text-primary mb-8">
                   Contact Information
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-8">
@@ -181,7 +181,7 @@ export default function ContactPage() {
                       <Phone className="w-7 h-7 text-primary group-hover:text-white" />
                     </div>
                     <div>
-                      <h4 className="font-display font-bold text-secondary text-lg">Phone</h4>
+                      <h4 className="font-display font-bold text-primary text-lg">Phone</h4>
                       <p className="text-neutral text-sm mb-2">Main line for all branches:</p>
                       <div className="space-y-1">
                         {branches.map((b) => (
@@ -202,7 +202,7 @@ export default function ContactPage() {
                       <Mail className="w-7 h-7 text-primary group-hover:text-white" />
                     </div>
                     <div>
-                      <h4 className="font-display font-bold text-secondary text-lg">Email</h4>
+                      <h4 className="font-display font-bold text-primary text-lg">Email</h4>
                       <a
                         href="mailto:info@kampaladental.ug"
                         className="text-primary font-bold hover:underline"
@@ -217,7 +217,7 @@ export default function ContactPage() {
                       <MessageCircle className="w-7 h-7 text-green-600 group-hover:text-white" />
                     </div>
                     <div>
-                      <h4 className="font-display font-bold text-secondary text-lg">WhatsApp</h4>
+                      <h4 className="font-display font-bold text-primary text-lg">WhatsApp</h4>
                       <a
                         href="https://wa.me/256702555000"
                         target="_blank"
@@ -234,7 +234,7 @@ export default function ContactPage() {
                       <Clock className="w-7 h-7 text-primary group-hover:text-white" />
                     </div>
                     <div>
-                      <h4 className="font-display font-bold text-secondary text-lg">Working Hours</h4>
+                      <h4 className="font-display font-bold text-primary text-lg">Working Hours</h4>
                       <p className="text-neutral font-medium">
                         Mon - Fri: 8:00 AM - 6:00 PM
                       </p>
@@ -247,7 +247,7 @@ export default function ContactPage() {
               </div>
 
               <div className="pt-4">
-                <h3 className="text-2xl font-display font-bold text-secondary mb-6">
+                <h3 className="text-2xl font-display font-bold text-primary mb-6">
                   Visit Our Branches
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 gap-4">
@@ -255,7 +255,7 @@ export default function ContactPage() {
                     <div key={index} className="p-6 bg-neutral-light/50 rounded-[2rem] border border-gray-100 hover:border-primary/30 transition-colors group">
                       <div className="flex items-center gap-3 mb-2">
                         <MapPin size={18} className="text-primary" />
-                        <h4 className="font-bold text-secondary group-hover:text-primary transition-colors">{branch.name}</h4>
+                        <h4 className="font-bold text-primary group-hover:text-primary-dark transition-colors">{branch.name}</h4>
                       </div>
                       <p className="text-neutral text-sm mb-2 ml-7">{branch.address}</p>
                       <a
@@ -281,7 +281,7 @@ export default function ContactPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl font-display font-bold text-secondary mb-6">
+            <h2 className="text-4xl font-display font-bold text-primary mb-6">
               Need Immediate Assistance?
             </h2>
             <p className="text-neutral mb-10 max-w-2xl mx-auto text-lg leading-relaxed">
