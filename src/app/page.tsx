@@ -81,11 +81,6 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="flex flex-col items-center w-full"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full mb-8 text-white">
-              <div className="w-2 h-2 bg-white rounded-full animate-pulse" />
-              <span className="text-white font-semibold text-sm">Kampala's Leading Dental Hospital</span>
-            </div>
-
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-white leading-tight mb-8">
               Eat Well <br className="hidden md:block" />
               <span className="text-primary-light">Smile</span> Good
