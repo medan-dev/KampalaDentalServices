@@ -35,7 +35,7 @@ export default function AboutPage() {
           <img 
             src="/clinic-interior.jpg" 
             alt="Kampala Dental Services Clinic Interior" 
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover brightness-[0.7] contrast-[1.1]"
           />
           {/* Overlay removed per user request */}
         </div>
@@ -45,14 +45,19 @@ export default function AboutPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            <span className="text-white/70 font-bold text-sm uppercase tracking-wider">About Us</span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mt-4 mb-6">
-              Modern Excellence in <span className="text-white/90 italic">Dental Care</span>
+            <div className="inline-block bg-primary text-white px-8 py-2 mb-4">
+              <span className="text-white/80 font-bold text-sm uppercase tracking-wider">About Us</span>
+            </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">
+              <span className="bg-white text-primary-dark px-4 py-1">Modern Excellence</span> <br/>
+              <span className="bg-secondary text-primary-dark px-4 py-1 mt-2 inline-block">in Dental Care</span>
             </h1>
-            <p className="text-gray-300 max-w-3xl mx-auto text-lg leading-relaxed">
-              Serving Kampala for over 15 years with a commitment to clinical excellence,
-              patient comfort, and state-of-the-art dental technology.
-            </p>
+            <div className="bg-neutral-dark/90 p-6 max-w-3xl mx-auto border-l-4 border-secondary">
+              <p className="text-white text-lg leading-relaxed">
+                Serving Kampala for over 15 years with a commitment to clinical excellence,
+                patient comfort, and state-of-the-art dental technology.
+              </p>
+            </div>
           </motion.div>
         </div>
         

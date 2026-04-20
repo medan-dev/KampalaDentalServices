@@ -69,7 +69,7 @@ export default function Home() {
           <img 
             src="/hero-main.jpg" 
             alt="Kampala Dental Services Professional Clinic" 
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover brightness-[0.7] contrast-[1.1]"
           />
           {/* Overlay removed per user request */}
         </div>
@@ -81,14 +81,16 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="flex flex-col items-center w-full"
           >
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-white leading-tight mb-8">
-              Eat Well <br className="hidden md:block" />
-              <span className="text-primary-light">Smile</span> Good
+            <h1 className="flex flex-col items-center gap-4 mb-10">
+              <span className="bg-primary text-white px-8 py-3 text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight">Eat Well</span>
+              <span className="bg-secondary text-primary-dark px-8 py-3 text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight uppercase tracking-widest mt-[-0.5rem]">Smile Good</span>
             </h1>
 
-            <p className="text-lg md:text-xl text-white/90 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
-              Experience world-class dental care in Uganda. Our expert team combines advanced technology with genuine compassion in a premium, institutional setting.
-            </p>
+            <div className="bg-neutral-dark/90 p-8 mb-10 max-w-2xl border-l-4 border-primary">
+              <p className="text-lg md:text-xl text-white font-medium leading-relaxed">
+                Experience world-class dental care in Uganda. Our expert team combines advanced technology with genuine compassion in a premium, institutional setting.
+              </p>
+            </div>
 
             <div className="flex flex-wrap items-center justify-center gap-4 mb-10">
               <Link href="/appointments" className="btn-primary text-lg px-10 py-4 border border-primary/20">

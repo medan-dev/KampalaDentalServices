@@ -312,7 +312,7 @@ export default function AppointmentsPage() {
           <img 
             src="/clinic-chair.jpg" 
             alt="Kampala Dental Services Treatment Room" 
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover brightness-[0.7] contrast-[1.1]"
           />
           {/* Overlay removed per user request */}
         </div>
@@ -322,14 +322,19 @@ export default function AppointmentsPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            <span className="text-secondary font-bold text-sm uppercase tracking-wider">Book Online</span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mt-4 mb-6">
-              Schedule Your <span className="text-secondary">Visit</span>
+            <div className="inline-block bg-primary text-white px-8 py-2 mb-4">
+              <span className="text-white/80 font-bold text-sm uppercase tracking-wider">Book Online</span>
+            </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">
+              <span className="bg-white text-primary-dark px-4 py-1">Schedule Your</span> <br/>
+              <span className="bg-secondary text-primary-dark px-4 py-1 mt-2 inline-block">Dental Visit</span>
             </h1>
-            <p className="text-gray-300 max-w-3xl mx-auto text-lg leading-relaxed">
-              Take the first step towards a healthier, brighter smile. 
-              Book an appointment at a branch and time that works best for you.
-            </p>
+            <div className="bg-neutral-dark/90 p-6 max-w-3xl mx-auto border-l-4 border-secondary">
+              <p className="text-white text-lg leading-relaxed">
+                Take the first step towards a healthier, brighter smile. 
+                Book an appointment at a branch and time that works best for you.
+              </p>
+            </div>
           </motion.div>
         </div>
         <SectionDivider color="#ffffff" position="bottom" />
