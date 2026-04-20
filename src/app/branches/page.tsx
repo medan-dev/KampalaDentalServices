@@ -71,7 +71,7 @@ export default function BranchesPage() {
             alt="Kampala Dental Services Clinic Branch" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-primary/60" />
+          {/* Overlay removed per user request */}
         </div>
         <div className="page-hero-content relative z-10">
           <motion.div 
@@ -105,12 +105,12 @@ export default function BranchesPage() {
               <motion.div
                 key={branch.id}
                 variants={item}
-                className="curved-card !p-0 border-none bg-neutral-light/30 rounded-[2rem] overflow-hidden shadow-xl"
+                className="curved-card !p-0 border border-gray-100 bg-neutral-light/30 rounded-[2rem] overflow-hidden transition-all"
               >
                 <div className="grid lg:grid-cols-2">
                   <div className="p-8 lg:p-12">
                     <div className="flex items-center gap-4 mb-8">
-                      <div className="w-14 h-14 bg-primary rounded-full flex items-center justify-center shadow-lg shadow-primary/20">
+                      <div className="w-14 h-14 bg-primary rounded-full flex items-center justify-center border border-primary/20">
                         <MapPin className="w-7 h-7 text-white" />
                       </div>
                       <div>
@@ -174,7 +174,7 @@ export default function BranchesPage() {
 
                     <Link
                       href={`/appointments?branch=${branch.id}`}
-                      className="btn-accent w-full sm:w-auto px-8 py-4 rounded-full border-none shadow-lg shadow-accent/20"
+                      className="btn-accent w-full sm:w-auto px-8 py-4 rounded-full border border-accent/20 transition-all"
                     >
                       <Calendar size={20} />
                       Book at This Branch
@@ -216,7 +216,7 @@ export default function BranchesPage() {
             </p>
             <a
               href="tel:+256702555000"
-              className="btn-primary text-lg px-10 py-4 rounded-full border-none shadow-xl"
+              className="btn-primary text-lg px-10 py-4 rounded-full border border-primary/20 transition-all"
             >
               <Phone size={20} />
               Call +256 700 593 479

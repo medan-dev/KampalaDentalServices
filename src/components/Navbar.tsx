@@ -30,7 +30,7 @@ export function Navbar() {
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50 flex justify-center px-4 sm:px-6 lg:px-8 mt-4 transition-all duration-300">
-      <header className="w-full max-w-[96%] xl:max-w-7xl bg-white shadow-[0_8px_30px_rgb(0,0,0,0.08)] rounded-[2rem] py-3 px-6 lg:px-10 transition-all duration-300">
+      <header className="w-full max-w-[96%] xl:max-w-7xl bg-white border border-gray-200 rounded-[2rem] py-3 px-6 lg:px-10 transition-all duration-300">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 group">
             {/* Removed drop-shadow so the image's white background blends perfectly with the header */}
@@ -73,7 +73,7 @@ export function Navbar() {
               <Phone size={18} className="text-primary" />
               <span className="text-sm font-medium">+256 700 593 479</span>
             </a>
-            <Link href="/appointments" className="btn-primary py-2.5 px-6 rounded-full shadow-md">
+            <Link href="/appointments" className="btn-primary py-2.5 px-6 rounded-full border border-primary/20">
               Book Now
             </Link>
           </div>
@@ -92,7 +92,7 @@ export function Navbar() {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
-              className="lg:hidden bg-white border-t border-gray-100 rounded-b-3xl absolute top-full left-0 right-0 shadow-xl overflow-hidden mt-2"
+              className="lg:hidden bg-white border border-gray-200 rounded-b-3xl absolute top-full left-0 right-0 overflow-hidden mt-2"
             >
               <div className="max-w-7xl mx-auto px-4 py-4 space-y-2">
                 {navLinks.map((link) => (

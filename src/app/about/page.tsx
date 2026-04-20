@@ -37,7 +37,7 @@ export default function AboutPage() {
             alt="Kampala Dental Services Clinic Interior" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-primary/70" />
+          {/* Overlay removed per user request */}
         </div>
         <div className="page-hero-content relative z-10">
           <motion.div 
@@ -69,7 +69,7 @@ export default function AboutPage() {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="aspect-[4/3] bg-neutral-light rounded-[32px] overflow-hidden border border-gray-100 shadow-lg">
+              <div className="aspect-[4/3] bg-neutral-light rounded-[32px] overflow-hidden border border-gray-100">
                 <img 
                   src="/clinic-interior.jpg" 
                   alt="Kampala Dental Services Clinic Interior" 
@@ -119,7 +119,7 @@ export default function AboutPage() {
             className="grid grid-cols-2 lg:grid-cols-4 gap-8"
           >
             {stats.map((stat, idx) => (
-              <motion.div key={idx} variants={item} className="p-8 bg-neutral-light/50 border border-gray-100 rounded-[2.5rem] hover:shadow-lg transition-shadow">
+              <motion.div key={idx} variants={item} className="p-8 bg-neutral-light/50 border border-gray-100 rounded-[2.5rem] transition-all">
                 <div className="text-4xl md:text-5xl font-display font-bold text-primary mb-2">{stat.value}</div>
                 <div className="text-gray-500 font-medium">{stat.label}</div>
               </motion.div>
@@ -179,7 +179,7 @@ export default function AboutPage() {
       {/* CTA Section */}
       <section className="section-padding bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-primary-dark p-8 md:p-16 text-center text-white relative overflow-hidden rounded-[2.5rem] z-10 shadow-xl">
+          <div className="bg-primary-dark p-8 md:p-16 text-center text-white relative overflow-hidden rounded-[2.5rem] z-10 border border-white/10">
             <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full opacity-10" />
             <div className="absolute bottom-0 left-0 w-48 h-48 bg-secondary/5 rounded-full opacity-10" />
             

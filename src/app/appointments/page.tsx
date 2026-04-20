@@ -274,7 +274,7 @@ function AppointmentsForm() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full py-5 bg-accent text-white font-bold text-lg rounded-full hover:bg-accent-dark transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 shadow-xl shadow-accent/20"
+          className="w-full py-5 bg-accent text-white font-bold text-lg rounded-full hover:bg-accent-dark transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 border border-accent/20"
         >
           {isSubmitting ? (
             <>
@@ -314,7 +314,7 @@ export default function AppointmentsPage() {
             alt="Kampala Dental Services Treatment Room" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-primary/60" />
+          {/* Overlay removed per user request */}
         </div>
         <div className="page-hero-content relative z-10">
           <motion.div 
@@ -337,7 +337,7 @@ export default function AppointmentsPage() {
 
       <section className="section-padding bg-white relative">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="curved-card p-8 md:p-12 bg-neutral-light/20 border-none shadow-inner">
+          <div className="curved-card p-8 md:p-12 bg-neutral-light/20 border border-gray-100 transition-all">
             <Suspense fallback={<LoadingFallback />}>
               <AppointmentsForm />
             </Suspense>

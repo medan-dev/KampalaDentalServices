@@ -58,7 +58,7 @@ export default function ContactPage() {
             alt="Kampala Dental Services Reception" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-primary/60" />
+          {/* Overlay removed per user request */}
         </div>
         <div className="page-hero-content relative z-10">
           <motion.div 
@@ -154,7 +154,7 @@ export default function ContactPage() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full btn-accent py-4 text-lg rounded-full border-none shadow-xl shadow-accent/20"
+                  className="w-full btn-accent py-4 text-lg rounded-full border border-accent/20 transition-all font-bold"
                 >
                   {isSubmitting ? (
                     <>
@@ -296,7 +296,7 @@ export default function ContactPage() {
             <div className="flex flex-wrap justify-center gap-4">
               <a
                 href="tel:+256702555000"
-                className="btn-primary text-lg px-8 py-4 rounded-full border-none shadow-lg"
+                className="btn-primary text-lg px-8 py-4 rounded-full border border-primary/20 transition-all"
               >
                 <Phone size={20} />
                 Call +256 700 593 479
@@ -305,7 +305,7 @@ export default function ContactPage() {
                 href="https://wa.me/256700593479"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-green-500 text-white font-bold rounded-full hover:bg-green-600 transition-all shadow-xl shadow-green-500/20"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-green-500 text-white font-bold rounded-full hover:bg-green-600 transition-all border border-green-600"
               >
                 <WhatsAppIcon size={20} />
                 WhatsApp Us

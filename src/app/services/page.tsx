@@ -69,7 +69,7 @@ export default function ServicesPage() {
             alt="State-of-the-art Dental Chair" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-primary/70" />
+          {/* Overlay removed per user request */}
         </div>
         <div className="page-hero-content relative z-10">
           <motion.div 
@@ -104,9 +104,9 @@ export default function ServicesPage() {
               <motion.div
                 key={index}
                 variants={item}
-                className="p-8 bg-neutral-light/50 rounded-[2.5rem] border border-gray-100 hover:border-primary/30 transition-all group hover:shadow-xl hover:-translate-y-1"
+                className="p-8 bg-neutral-light/50 rounded-[2.5rem] border border-gray-100 hover:border-primary/30 transition-all group hover:-translate-y-1"
               >
-                <div className="w-14 h-14 bg-white rounded-full shadow-sm flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <div className="w-14 h-14 bg-white rounded-full border border-gray-100 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                   <service.icon className="w-7 h-7 text-primary" />
                 </div>
                 <h3 className="text-2xl font-display font-bold text-primary-dark mb-4">{service.title}</h3>
@@ -160,7 +160,7 @@ export default function ServicesPage() {
       {/* CTA Section */}
       <section className="section-padding bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-primary-dark p-8 md:p-16 text-center text-white relative overflow-hidden rounded-[2rem] z-10 shadow-xl">
+          <div className="bg-primary-dark p-8 md:p-16 text-center text-white relative overflow-hidden rounded-[2rem] z-10 border border-white/10">
             <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full opacity-10" />
             <div className="absolute bottom-0 left-0 w-48 h-48 bg-secondary/5 rounded-full opacity-10" />
             

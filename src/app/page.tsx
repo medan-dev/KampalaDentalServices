@@ -71,7 +71,7 @@ export default function Home() {
             alt="Kampala Dental Services Professional Clinic" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-primary/60" />
+          {/* Overlay removed per user request */}
         </div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-32 flex flex-col items-center">
@@ -91,7 +91,7 @@ export default function Home() {
             </p>
 
             <div className="flex flex-wrap items-center justify-center gap-4 mb-10">
-              <Link href="/appointments" className="btn-primary text-lg px-10 py-4 shadow-xl">
+              <Link href="/appointments" className="btn-primary text-lg px-10 py-4 border border-primary/20">
                 Book Appointment <ArrowRight size={20} />
               </Link>
               <Link href="/services" className="px-10 py-4 bg-white/10 text-white font-semibold rounded-full hover:bg-white/20 transition-all border border-white/20">
@@ -162,7 +162,7 @@ export default function Home() {
               <motion.div 
                 key={index} 
                 variants={item}
-                className="p-8 bg-white rounded-[32px] shadow-lg hover:shadow-xl transition-all group curved-card border-none"
+                className="p-8 bg-white rounded-[32px] transition-all group curved-card border border-gray-100"
               >
                 <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
                   <service.icon className="w-7 h-7 text-primary group-hover:text-white" />
@@ -208,7 +208,7 @@ export default function Home() {
               <motion.div 
                 key={index} 
                 variants={item}
-                className="text-center p-8 bg-white rounded-[2rem] shadow-lg curved-card hover:shadow-xl transition-shadow"
+                className="text-center p-8 bg-white rounded-[2rem] border border-gray-100 curved-card transition-all"
               >
                 <div className="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
                   <reason.icon className="w-8 h-8 text-primary" />
@@ -247,7 +247,7 @@ export default function Home() {
               <motion.div 
                 key={index} 
                 variants={item}
-                className="p-6 bg-primary/5 rounded-[2.5rem] hover:bg-primary/10 transition-colors curved-card hover:shadow-lg"
+                className="p-6 bg-primary/5 rounded-[2.5rem] hover:bg-primary/10 transition-colors curved-card border border-primary/10"
               >
                 <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-4">
                   <MapPin className="w-6 h-6 text-white" />
