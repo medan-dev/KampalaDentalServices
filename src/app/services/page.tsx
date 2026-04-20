@@ -67,7 +67,7 @@ export default function ServicesPage() {
           <img 
             src="/clinic-chair.jpg" 
             alt="State-of-the-art Dental Chair" 
-            className="w-full h-full object-cover brightness-[0.7] contrast-[1.1]"
+            className="w-full h-full object-cover brightness-[0.8] contrast-[1.1]"
           />
           {/* Overlay removed per user request */}
         </div>
@@ -77,19 +77,14 @@ export default function ServicesPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            <div className="inline-block bg-primary text-white px-8 py-2 mb-4">
-              <span className="text-white/80 font-bold text-sm uppercase tracking-wider">Our Services</span>
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">
-              <span className="bg-secondary text-primary-dark px-4 py-1">Comprehensive</span> <br/>
-              <span className="bg-white text-primary-dark px-4 py-1 mt-2 inline-block">Dental Care</span>
+            <span className="text-secondary font-bold text-sm uppercase tracking-wider hero-shadow">Our Services</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mt-4 mb-6 hero-shadow">
+              Comprehensive <span className="text-secondary italic">Dental Care</span>
             </h1>
-            <div className="bg-neutral-dark/90 p-6 max-w-3xl mx-auto border-l-4 border-secondary">
-              <p className="text-white text-lg leading-relaxed">
-                From routine cleanings to advanced oral surgery, our highly trained team 
-                is equipped to meet all your family's dental needs under one roof.
-              </p>
-            </div>
+            <p className="text-white max-w-3xl mx-auto text-lg leading-relaxed hero-shadow">
+              From routine cleanings to advanced oral surgery, our highly trained team 
+              is equipped to meet all your family's dental needs under one roof.
+            </p>
           </motion.div>
         </div>
         <SectionDivider color="#ffffff" position="bottom" />

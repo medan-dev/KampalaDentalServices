@@ -35,7 +35,7 @@ export default function AboutPage() {
           <img 
             src="/clinic-interior.jpg" 
             alt="Kampala Dental Services Clinic Interior" 
-            className="w-full h-full object-cover brightness-[0.7] contrast-[1.1]"
+            className="w-full h-full object-cover brightness-[0.8] contrast-[1.1]"
           />
           {/* Overlay removed per user request */}
         </div>
@@ -45,19 +45,14 @@ export default function AboutPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            <div className="inline-block bg-primary text-white px-8 py-2 mb-4">
-              <span className="text-white/80 font-bold text-sm uppercase tracking-wider">About Us</span>
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">
-              <span className="bg-white text-primary-dark px-4 py-1">Modern Excellence</span> <br/>
-              <span className="bg-secondary text-primary-dark px-4 py-1 mt-2 inline-block">in Dental Care</span>
+            <span className="text-secondary font-bold text-sm uppercase tracking-wider hero-shadow">About Us</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mt-4 mb-6 hero-shadow">
+              Modern Excellence in <span className="text-secondary italic">Dental Care</span>
             </h1>
-            <div className="bg-neutral-dark/90 p-6 max-w-3xl mx-auto border-l-4 border-secondary">
-              <p className="text-white text-lg leading-relaxed">
-                Serving Kampala for over 15 years with a commitment to clinical excellence,
-                patient comfort, and state-of-the-art dental technology.
-              </p>
-            </div>
+            <p className="text-white max-w-3xl mx-auto text-lg leading-relaxed hero-shadow">
+              Serving Kampala for over 15 years with a commitment to clinical excellence,
+              patient comfort, and state-of-the-art dental technology.
+            </p>
           </motion.div>
         </div>
         

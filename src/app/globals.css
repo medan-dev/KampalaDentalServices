@@ -82,4 +82,8 @@ h1, h2, h3, h4, h5, h6 {
     @apply w-full h-auto block relative z-20;
   }
 
+  .hero-shadow {
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6), 0 2px 4px rgba(0, 0, 0, 0.4);
+  }
+
 }
