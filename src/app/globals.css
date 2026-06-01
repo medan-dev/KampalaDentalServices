@@ -46,8 +46,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   /* Universal Flat Clinical Card */
-  .curved-card, .glass-card {
-    @apply bg-white border border-gray-200 transition-all duration-300 p-8 shadow-none;
+  .clinical-card {
+    @apply bg-white border-[1px] border-primary/20 transition-all duration-200 p-8 shadow-sm rounded-none;
+  }
+  .clinical-card:hover {
+    @apply border-[1px] border-primary shadow-md;
   }
 
   .section-padding {

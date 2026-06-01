@@ -14,25 +14,25 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL("https://kampala-dental-services.vercel.app"),
   title: {
-    default: "Kampala Dental Services | Best Dentists in Uganda",
-    template: "%s | Kampala Dental Services"
+    default: "Best Dental Clinic in Kampala | Kampala Dental Services Uganda",
+    template: "%s | Best Dentists in Kampala, Uganda"
   },
-  description: "Premium dental care in Uganda. Providing world-class general dentistry, cosmetic surgery, orthodontics, and implants in Kampala since 2008.",
-  keywords: ["Dentist Kampala", "Dental Clinic Uganda", "Teeth Cleaning Kampala", "Braces Uganda", "Dental Implants Uganda", "Teeth Whitening Kampala", "Emergency Dentist Kampala"],
+  description: "Ranked the Best Dental Clinic in Kampala, Uganda. We provide premium teeth cleaning, braces, dental implants, root canals, and emergency dentist services.",
+  keywords: ["Best Dental Clinic Kampala", "Dentist in Kampala Uganda", "Teeth Cleaning Kampala", "Braces Uganda", "Dental Implants Uganda", "Teeth Whitening Kampala", "Emergency Dentist Kampala", "Dental Surgeon Uganda", "Kampala Dental Services", "Top Dentist Near Me"],
   authors: [{ name: "Kampala Dental Services" }],
   openGraph: {
     type: "website",
     locale: "en_UG",
     url: "https://kampala-dental-services.vercel.app",
-    siteName: "Kampala Dental Services",
-    title: "Kampala Dental Services | Best Dentists in Uganda",
-    description: "Experience world-class dental care in Uganda. Book your appointment today for a healthy, beautiful smile.",
-    images: [{ url: "/clinic-exterior.jpg", width: 1200, height: 630, alt: "Kampala Dental Services Clinic" }],
+    siteName: "Best Dental Clinic in Kampala - Kampala Dental Services",
+    title: "Best Dental Clinic in Kampala | Top Dentists in Uganda",
+    description: "Ranked the Best Dental Clinic in Kampala, Uganda. Experience world-class dental care, braces, and implants. Book your appointment today.",
+    images: [{ url: "/clinic-exterior.jpg", width: 1200, height: 630, alt: "Best Dental Clinic in Kampala - Exterior" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kampala Dental Services | Best Dentists in Uganda",
-    description: "Premium dental care in Uganda. Expert dentistry services in Kampala.",
+    title: "Best Dental Clinic in Kampala | Kampala Dental Services",
+    description: "Ranked the Best Dental Clinic in Kampala, Uganda. Emergency dentists available.",
     images: ["/clinic-exterior.jpg"],
   },
   alternates: {

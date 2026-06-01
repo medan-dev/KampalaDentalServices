@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, Star, Phone, Clock, Shield, Heart, Sparkles, CheckCircle, Calendar, MapPin, Mail, Stethoscope, Smile, Braces, Hand, Syringe, Crown, Baby as BabyIcon } from "lucide-react";
 
 const services = [
@@ -65,10 +66,12 @@ export default function Home() {
       {/* We add -mt-20 to negate the pt-20 on the <main> layout, forcing the hero image to the absolute top edge of the browser for a flush fit with the floating header */}
       <section className="relative min-h-screen -mt-20 flex flex-col items-center justify-center overflow-hidden text-center pb-20">
         <div className="absolute inset-0">
-          <img 
+          <Image 
             src="/hero-main.jpg" 
             alt="Kampala Dental Services Professional Clinic" 
-            className="w-full h-full object-cover brightness-[0.8] contrast-[1.1]"
+            fill
+            priority
+            className="object-cover brightness-[0.8] contrast-[1.1]"
           />
           {/* Overlay removed per user request */}
         </div>
@@ -161,7 +164,7 @@ export default function Home() {
               <motion.div 
                 key={index} 
                 variants={item}
-                className="p-8 bg-white rounded-[32px] transition-all group curved-card border border-gray-100"
+                className="clinical-card group"
               >
                 <div className="w-14 h-14 bg-primary/10  flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
                   <service.icon className="w-7 h-7 text-primary group-hover:text-white" />
@@ -207,7 +210,7 @@ export default function Home() {
               <motion.div 
                 key={index} 
                 variants={item}
-                className="text-center p-8 bg-white  border border-gray-100 curved-card transition-all"
+                className="text-center clinical-card"
               >
                 <div className="w-16 h-16 mx-auto mb-4 bg-primary/10  flex items-center justify-center">
                   <reason.icon className="w-8 h-8 text-primary" />
@@ -246,7 +249,7 @@ export default function Home() {
               <motion.div 
                 key={index} 
                 variants={item}
-                className="p-6 bg-primary/5 rounded-[2.5rem] hover:bg-primary/10 transition-colors curved-card border border-primary/10"
+                className="clinical-card"
               >
                 <div className="w-12 h-12 bg-primary  flex items-center justify-center mb-4">
                   <MapPin className="w-6 h-6 text-white" />
@@ -293,7 +296,7 @@ export default function Home() {
               <motion.div 
                 key={index} 
                 variants={item}
-                className="p-6 bg-primary-dark/80 rounded-[32px] border border-white/20 hover:bg-primary-dark transition-colors"
+                className="clinical-card bg-primary-dark/80 border-white/20 hover:bg-primary-dark text-white"
               >
                 <div className="flex gap-1 mb-4">{[...Array(testimonial.rating)].map((_, i) => (<Star key={i} size={18} className="fill-yellow-400 text-yellow-400" />))}</div>
                 <p className="text-white mb-4 italic">&ldquo;{testimonial.text}&rdquo;</p>
@@ -320,10 +323,10 @@ export default function Home() {
             <h2 className="text-4xl font-display font-bold text-secondary mb-4">Ready for Your Perfect Smile?</h2>
             <p className="text-gray-500 mb-8">Book your appointment today and experience quality dental care in Uganda.</p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link href="/appointments" className="btn-primary text-lg px-8 py-4 curved-card">
+              <Link href="/appointments" className="btn-primary text-lg px-8 py-4 clinical-card p-0 shadow-none border-none hover:border-transparent">
                 Book Now <Calendar size={20} />
               </Link>
-              <a href="tel:+256702555000" className="btn-outline text-lg px-8 py-4 curved-card">
+              <a href="tel:+256702555000" className="btn-outline text-lg px-8 py-4 clinical-card p-0 shadow-none hover:border-primary border-primary bg-transparent text-primary hover:text-white">
                 <Phone size={20} /> Call Us
               </a>
             </div>
