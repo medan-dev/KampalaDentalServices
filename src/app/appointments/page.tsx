@@ -73,10 +73,20 @@ function AppointmentsForm() {
     setSubmitStatus(null);
 
     try {
-      const response = await fetch("/api/appointments", {
+      const response = await fetch("http://localhost/Dental%20Ms/api/website_receive.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
+        body: JSON.stringify({
+          type: "appointment",
+          name: data.fullName,
+          email: data.email,
+          phone: data.phone,
+          service: data.service,
+          branch: data.branch,
+          preferred_date: data.date,
+          preferred_time: data.time,
+          message: data.notes
+        }),
       });
 
       const result = await response.json();

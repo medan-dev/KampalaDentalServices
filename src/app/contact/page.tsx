@@ -41,14 +41,14 @@ export default function ContactPage() {
     setSubmitStatus(null);
 
     try {
-      const response = await fetch("http://localhost:4000/api/messages.php", {
+      const response = await fetch("http://localhost/Dental%20Ms/api/website_receive.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
+          type: "contact",
           name: data.name,
           email: data.email,
-          phone: "", 
-          subject: "Website Contact Form Inquiry",
+          phone: "See Email", // Contact form currently doesn't capture phone
           message: data.message
         }),
       });
