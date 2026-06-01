@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { Coffee, Shield, Heart, Sparkles, Phone, MapPin, Clock, ArrowRight, CheckCircle } from "lucide-react";
-import { SectionDivider } from "@/components/SectionDivider";
 
 const stats = [
   { value: "15+", label: "Years Experience" },
@@ -56,7 +55,7 @@ export default function AboutPage() {
           </motion.div>
         </div>
         
-        <SectionDivider color="#ffffff" position="bottom" />
+        
       </section>
 
       {/* Our Story Section */}
@@ -76,7 +75,7 @@ export default function AboutPage() {
                   className="w-full h-full object-cover" 
                 />
               </div>
-              <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-secondary/10 rounded-full -z-10" />
+              <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-secondary/10  -z-10" />
             </motion.div>
 
             <motion.div
@@ -93,11 +92,11 @@ export default function AboutPage() {
                   Today, we have grown into one of Uganda's leading dental practices, known for our expert team of certified dentists and our investment in modern dental technology.
                 </p>
                 <div className="grid sm:grid-cols-2 gap-4 mt-8">
-                  <div className="flex items-center gap-3 p-4 bg-primary/5 rounded-[2rem]">
+                  <div className="flex items-center gap-3 p-4 bg-primary/5 ">
                     <Shield className="text-primary w-6 h-6" />
                     <span className="text-sm font-semibold text-primary-dark">Certified Experts</span>
                   </div>
-                  <div className="flex items-center gap-3 p-4 bg-primary/5 rounded-[2rem]">
+                  <div className="flex items-center gap-3 p-4 bg-primary/5 ">
                     <Sparkles className="text-primary w-6 h-6" />
                     <span className="text-sm font-semibold text-primary-dark">Advanced Tech</span>
                   </div>
@@ -106,7 +105,7 @@ export default function AboutPage() {
             </motion.div>
           </div>
         </div>
-        <SectionDivider color="#F7F7F9" position="bottom" />
+        
       </section>
 
       <section className="section-padding bg-[#F7F7F9] relative z-10">
@@ -126,7 +125,7 @@ export default function AboutPage() {
             ))}
           </motion.div>
         </div>
-        <SectionDivider color="#ffffff" position="bottom" />
+        
       </section>
 
       {/* Team/Philosophy Section */}
@@ -165,7 +164,7 @@ export default function AboutPage() {
                 transition={{ delay: idx * 0.2 }}
                 className="curved-card p-10 flex flex-col items-center text-center group hover:bg-neutral-light transition-colors border-none bg-white rounded-[2.5rem]"
               >
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <div className="w-16 h-16 bg-primary/10  flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                   <feature.icon className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-display font-bold text-primary-dark mb-4">{feature.title}</h3>
@@ -180,18 +179,18 @@ export default function AboutPage() {
       <section className="section-padding bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-primary-dark p-8 md:p-16 text-center text-white relative overflow-hidden rounded-[2.5rem] z-10 border border-white/10">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full opacity-10" />
-            <div className="absolute bottom-0 left-0 w-48 h-48 bg-secondary/5 rounded-full opacity-10" />
+            <div className="absolute top-0 right-0 w-64 h-64 bg-white/5  opacity-10" />
+            <div className="absolute bottom-0 left-0 w-48 h-48 bg-secondary/5  opacity-10" />
             
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">Experience the Difference Today</h2>
             <p className="text-white/70 max-w-2xl mx-auto mb-10 text-lg">
               Join the thousands of happy patients who have discovered the perfect combination of expert care and modern comfort.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <a href="/appointments" className="btn-secondary px-8 py-4 rounded-full font-bold">
+              <a href="/appointments" className="btn-secondary px-8 py-4  font-bold">
                 Book Your Visit <ArrowRight size={20} className="inline ml-2" />
               </a>
-              <a href="/contact" className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-white/60 text-white font-bold rounded-full transition-all duration-500 hover:bg-white hover:text-primary font-bold hover:-translate-y-1">
+              <a href="/contact" className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-white/60 text-white font-bold  transition-all duration-500 hover:bg-white hover:text-primary font-bold hover:-translate-y-1">
                 Contact Us
               </a>
             </div>

@@ -13,7 +13,7 @@ export function WhatsAppButton() {
       href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50 bg-green-500 text-white p-4 rounded-full border border-green-600 hover:bg-green-600 transition-colors"
+      className="fixed bottom-6 right-6 z-50 bg-green-500 text-white p-4  border border-green-600 hover:bg-green-600 transition-colors"
       initial={{ scale: 0 }}
       animate={{ scale: 1 }}
       whileHover={{ scale: 1.1 }}

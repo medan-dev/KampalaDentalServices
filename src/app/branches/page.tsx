@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { Phone, MapPin, Clock, Calendar } from "lucide-react";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
-import { SectionDivider } from "@/components/SectionDivider";
 
 const branches = [
   {
@@ -89,7 +88,7 @@ export default function BranchesPage() {
             </p>
           </motion.div>
         </div>
-        <SectionDivider color="#ffffff" position="bottom" />
+        
       </section>
 
       <section className="section-padding bg-white relative">
@@ -105,12 +104,12 @@ export default function BranchesPage() {
               <motion.div
                 key={branch.id}
                 variants={item}
-                className="curved-card !p-0 border border-gray-100 bg-neutral-light/30 rounded-[2rem] overflow-hidden transition-all"
+                className="curved-card !p-0 border border-gray-100 bg-neutral-light/30  overflow-hidden transition-all"
               >
                 <div className="grid lg:grid-cols-2">
                   <div className="p-8 lg:p-12">
                     <div className="flex items-center gap-4 mb-8">
-                      <div className="w-14 h-14 bg-primary rounded-full flex items-center justify-center border border-primary/20">
+                      <div className="w-14 h-14 bg-primary  flex items-center justify-center border border-primary/20">
                         <MapPin className="w-7 h-7 text-white" />
                       </div>
                       <div>
@@ -174,7 +173,7 @@ export default function BranchesPage() {
 
                     <Link
                       href={`/appointments?branch=${branch.id}`}
-                      className="btn-accent w-full sm:w-auto px-8 py-4 rounded-full border border-accent/20 transition-all"
+                      className="btn-accent w-full sm:w-auto px-8 py-4  border border-accent/20 transition-all"
                     >
                       <Calendar size={20} />
                       Book at This Branch
@@ -216,7 +215,7 @@ export default function BranchesPage() {
             </p>
             <a
               href="tel:+256702555000"
-              className="btn-primary text-lg px-10 py-4 rounded-full border border-primary/20 transition-all"
+              className="btn-primary text-lg px-10 py-4  border border-primary/20 transition-all"
             >
               <Phone size={20} />
               Call +256 700 593 479

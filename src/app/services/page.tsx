@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { Stethoscope, Sparkles, Braces, Hand, Syringe, Crown, Baby as BabyIcon, ChevronRight } from "lucide-react";
-import { SectionDivider } from "@/components/SectionDivider";
 
 const services = [
   { 
@@ -87,7 +86,7 @@ export default function ServicesPage() {
             </p>
           </motion.div>
         </div>
-        <SectionDivider color="#ffffff" position="bottom" />
+        
       </section>
 
       {/* Services Grid */}
@@ -106,7 +105,7 @@ export default function ServicesPage() {
                 variants={item}
                 className="p-8 bg-neutral-light/50 rounded-[2.5rem] border border-gray-100 hover:border-primary/30 transition-all group hover:-translate-y-1"
               >
-                <div className="w-14 h-14 bg-white rounded-full border border-gray-100 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <div className="w-14 h-14 bg-white  border border-gray-100 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                   <service.icon className="w-7 h-7 text-primary" />
                 </div>
                 <h3 className="text-2xl font-display font-bold text-primary-dark mb-4">{service.title}</h3>
@@ -116,7 +115,7 @@ export default function ServicesPage() {
                 <ul className="space-y-2 mb-8">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center gap-2 text-sm text-gray-500">
-                      <div className="w-1.5 h-1.5 bg-secondary rounded-full" />
+                      <div className="w-1.5 h-1.5 bg-secondary " />
                       {feature}
                     </li>
                   ))}
@@ -130,7 +129,7 @@ export default function ServicesPage() {
             ))}
           </motion.div>
         </div>
-        <SectionDivider color="#F7F7F9" position="bottom" />
+        
       </section>
 
       <section className="section-padding bg-[#F7F7F9] relative z-10">
@@ -160,19 +159,19 @@ export default function ServicesPage() {
       {/* CTA Section */}
       <section className="section-padding bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-primary-dark p-8 md:p-16 text-center text-white relative overflow-hidden rounded-[2rem] z-10 border border-white/10">
-            <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full opacity-10" />
-            <div className="absolute bottom-0 left-0 w-48 h-48 bg-secondary/5 rounded-full opacity-10" />
+          <div className="bg-primary-dark p-8 md:p-16 text-center text-white relative overflow-hidden  z-10 border border-white/10">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-white/5  opacity-10" />
+            <div className="absolute bottom-0 left-0 w-48 h-48 bg-secondary/5  opacity-10" />
             
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">Need Immediate Assistance?</h2>
             <p className="text-white/70 max-w-2xl mx-auto mb-10 text-lg">
               Our emergency dental team is ready to help you with any urgent oral health needs.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <a href="/appointments" className="btn-secondary px-8 py-4 rounded-full">
+              <a href="/appointments" className="btn-secondary px-8 py-4 ">
                 Book Consultation
               </a>
-              <a href="tel:+256702555000" className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-white/60 text-white font-bold rounded-full transition-all duration-500 hover:bg-white hover:text-primary hover:-translate-y-1">
+              <a href="tel:+256702555000" className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-white/60 text-white font-bold  transition-all duration-500 hover:bg-white hover:text-primary hover:-translate-y-1">
                 Call Emergency Line
               </a>
             </div>

@@ -7,7 +7,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { Phone, Mail, MapPin, Clock, Send, CheckCircle, Loader2 } from "lucide-react";
 import { WhatsAppIcon } from "@/components/WhatsAppIcon";
-import { SectionDivider } from "@/components/SectionDivider";
+
 
 const contactSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -93,7 +93,7 @@ export default function ContactPage() {
             </p>
           </motion.div>
         </div>
-        <SectionDivider color="#ffffff" position="bottom" />
+        
       </section>
 
       <section className="section-padding bg-white relative">
@@ -113,7 +113,7 @@ export default function ContactPage() {
                   <motion.div
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="mb-8 p-4 bg-green-50 border border-green-200 rounded-[2rem] flex items-center gap-3"
+                    className="mb-8 p-4 bg-green-50 border border-green-200  flex items-center gap-3"
                   >
                   <CheckCircle className="w-5 h-5 text-green-600" />
                   <span className="text-green-800 font-medium">Message sent successfully!</span>
@@ -124,7 +124,7 @@ export default function ContactPage() {
                   <motion.div
                     initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="mb-8 p-4 bg-red-50 border border-red-200 rounded-[2rem] flex items-center gap-3"
+                    className="mb-8 p-4 bg-red-50 border border-red-200  flex items-center gap-3"
                   >
                   <span className="text-red-800 font-medium">Failed to send message. Please try again.</span>
                 </motion.div>
@@ -139,7 +139,7 @@ export default function ContactPage() {
                     <input
                       {...register("name")}
                       type="text"
-                      className="w-full px-6 py-4 bg-white border border-gray-200 rounded-full focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none"
+                      className="w-full px-6 py-4 bg-white border border-gray-200  focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none"
                       placeholder="John Doe"
                     />
                     {errors.name && (
@@ -154,7 +154,7 @@ export default function ContactPage() {
                     <input
                       {...register("email")}
                       type="email"
-                      className="w-full px-6 py-4 bg-white border border-gray-200 rounded-full focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none"
+                      className="w-full px-6 py-4 bg-white border border-gray-200  focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none"
                       placeholder="john@example.com"
                     />
                     {errors.email && (
@@ -170,7 +170,7 @@ export default function ContactPage() {
                   <textarea
                     {...register("message")}
                     rows={5}
-                    className="w-full px-6 py-4 bg-white border border-gray-200 rounded-[2rem] focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none resize-none"
+                    className="w-full px-6 py-4 bg-white border border-gray-200  focus:ring-2 focus:ring-primary focus:border-transparent transition-all outline-none resize-none"
                     placeholder="How can we help you today?"
                   />
                   {errors.message && (
@@ -181,7 +181,7 @@ export default function ContactPage() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full btn-accent py-4 text-lg rounded-full border border-accent/20 transition-all font-bold"
+                  className="w-full btn-accent py-4 text-lg  border border-accent/20 transition-all font-bold"
                 >
                   {isSubmitting ? (
                     <>
@@ -209,8 +209,8 @@ export default function ContactPage() {
                   Contact Information
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-8">
-                  <div className="flex items-start gap-4 p-5 rounded-[2rem] hover:bg-neutral-light transition-colors group">
-                    <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-primary group-hover:text-white transition-all">
+                  <div className="flex items-start gap-4 p-5  hover:bg-neutral-light transition-colors group">
+                    <div className="w-14 h-14 bg-primary/10  flex items-center justify-center flex-shrink-0 group-hover:bg-primary group-hover:text-white transition-all">
                       <Phone className="w-7 h-7 text-primary group-hover:text-white" />
                     </div>
                     <div>
@@ -230,8 +230,8 @@ export default function ContactPage() {
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-4 p-5 rounded-[2rem] hover:bg-neutral-light transition-colors group">
-                    <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-primary group-hover:text-white transition-all">
+                  <div className="flex items-start gap-4 p-5  hover:bg-neutral-light transition-colors group">
+                    <div className="w-14 h-14 bg-primary/10  flex items-center justify-center flex-shrink-0 group-hover:bg-primary group-hover:text-white transition-all">
                       <Mail className="w-7 h-7 text-primary group-hover:text-white" />
                     </div>
                     <div>
@@ -245,8 +245,8 @@ export default function ContactPage() {
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-4 p-5 rounded-[2rem] hover:bg-neutral-light transition-colors group">
-                    <div className="w-14 h-14 bg-green-50 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-green-500 group-hover:text-white transition-all">
+                  <div className="flex items-start gap-4 p-5  hover:bg-neutral-light transition-colors group">
+                    <div className="w-14 h-14 bg-green-50  flex items-center justify-center flex-shrink-0 group-hover:bg-green-500 group-hover:text-white transition-all">
                       <WhatsAppIcon className="w-7 h-7 text-green-600 group-hover:text-white" />
                     </div>
                     <div>
@@ -262,8 +262,8 @@ export default function ContactPage() {
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-4 p-5 rounded-[2rem] hover:bg-neutral-light transition-colors group">
-                    <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-primary group-hover:text-white transition-all">
+                  <div className="flex items-start gap-4 p-5  hover:bg-neutral-light transition-colors group">
+                    <div className="w-14 h-14 bg-primary/10  flex items-center justify-center flex-shrink-0 group-hover:bg-primary group-hover:text-white transition-all">
                       <Clock className="w-7 h-7 text-primary group-hover:text-white" />
                     </div>
                     <div>
@@ -285,7 +285,7 @@ export default function ContactPage() {
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 gap-4">
                   {branches.map((branch, index) => (
-                    <div key={index} className="p-6 bg-neutral-light/50 rounded-[2rem] border border-gray-100 hover:border-primary/30 transition-colors group">
+                    <div key={index} className="p-6 bg-neutral-light/50  border border-gray-100 hover:border-primary/30 transition-colors group">
                       <div className="flex items-center gap-3 mb-2">
                         <MapPin size={18} className="text-primary" />
                         <h4 className="font-bold text-primary group-hover:text-primary-dark transition-colors">{branch.name}</h4>
@@ -304,7 +304,7 @@ export default function ContactPage() {
             </motion.div>
           </div>
         </div>
-        <SectionDivider color="#F7F7F9" position="bottom" />
+        
       </section>
 
       <section className="section-padding bg-[#F7F7F9] relative z-10">
@@ -323,7 +323,7 @@ export default function ContactPage() {
             <div className="flex flex-wrap justify-center gap-4">
               <a
                 href="tel:+256702555000"
-                className="btn-primary text-lg px-8 py-4 rounded-full border border-primary/20 transition-all"
+                className="btn-primary text-lg px-8 py-4  border border-primary/20 transition-all"
               >
                 <Phone size={20} />
                 Call +256 700 593 479
@@ -332,7 +332,7 @@ export default function ContactPage() {
                 href="https://wa.me/256700593479"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-green-500 text-white font-bold rounded-full hover:bg-green-600 transition-all border border-green-600"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-green-500 text-white font-bold  hover:bg-green-600 transition-all border border-green-600"
               >
                 <WhatsAppIcon size={20} />
                 WhatsApp Us

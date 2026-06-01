@@ -29,8 +29,8 @@ export function Navbar() {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 flex justify-center px-4 sm:px-6 lg:px-8 mt-4 transition-all duration-300">
-      <header className="w-full max-w-[96%] xl:max-w-7xl bg-white border border-gray-200 rounded-[2rem] py-3 px-6 lg:px-10 transition-all duration-300">
+    <div className="fixed top-0 left-0 right-0 z-50 flex justify-center bg-white border-b border-gray-200 transition-all duration-300">
+      <header className="w-full bg-white py-3 px-6 lg:px-10 transition-all duration-300">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 group">
             {/* Removed drop-shadow so the image's white background blends perfectly with the header */}
@@ -73,14 +73,14 @@ export function Navbar() {
               <Phone size={18} className="text-primary" />
               <span className="text-sm font-medium">+256 700 593 479</span>
             </a>
-            <Link href="/appointments" className="btn-primary py-2.5 px-6 rounded-full border border-primary/20">
+            <Link href="/appointments" className="btn-primary py-2 px-6">
               Book Now
             </Link>
           </div>
 
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden p-2 rounded-lg text-gray-600 hover:bg-gray-100"
+            className="lg:hidden p-2  text-gray-600 hover:bg-gray-100"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -92,7 +92,7 @@ export function Navbar() {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
-              className="lg:hidden bg-white border border-gray-200 rounded-b-3xl absolute top-full left-0 right-0 overflow-hidden mt-2"
+              className="lg:hidden bg-white border-b border-gray-200 absolute top-full left-0 right-0 overflow-hidden"
             >
               <div className="max-w-7xl mx-auto px-4 py-4 space-y-2">
                 {navLinks.map((link) => (
@@ -100,7 +100,7 @@ export function Navbar() {
                     key={link.href}
                     href={link.href}
                     onClick={() => setIsOpen(false)}
-                    className={`block py-3 px-4 text-base font-semibold rounded-lg ${
+                    className={`block py-3 px-4 text-base font-semibold ${
                       pathname === link.href
                         ? "text-primary bg-primary/5 border-l-4 border-primary"
                         : "text-gray-600 hover:bg-primary/5"
@@ -112,7 +112,7 @@ export function Navbar() {
                 <div className="pt-4 flex flex-col gap-3 px-4 pb-4">
                   <a
                     href="tel:+256702555000"
-                    className="flex items-center justify-center gap-2 py-3 border-2 border-primary text-primary rounded-lg font-bold"
+                    className="flex items-center justify-center gap-2 py-3 border-2 border-primary text-primary  font-bold"
                   >
                     <Phone size={18} />
                     +256 700 593 479
@@ -120,7 +120,7 @@ export function Navbar() {
                   <Link
                     href="/appointments"
                     onClick={() => setIsOpen(false)}
-                    className="btn-primary justify-center text-center w-full rounded-full"
+                    className="btn-primary justify-center text-center w-full"
                   >
                     Book Appointment
                   </Link>

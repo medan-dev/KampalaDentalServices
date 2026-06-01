@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight, Star, Phone, Clock, Shield, Heart, Sparkles, CheckCircle, Calendar, MapPin, Mail, Stethoscope, Smile, Braces, Hand, Syringe, Crown, Baby as BabyIcon } from "lucide-react";
-import { SectionDivider } from "@/components/SectionDivider";
 
 const services = [
   { icon: Stethoscope, title: "General Dentistry", desc: "Checkups, cleanings, fillings, and extractions for the whole family." },
@@ -94,7 +93,7 @@ export default function Home() {
               <Link href="/appointments" className="btn-primary text-lg px-10 py-4 border border-primary/20">
                 Book Appointment <ArrowRight size={20} />
               </Link>
-              <Link href="/services" className="px-10 py-4 bg-white/10 text-white font-semibold rounded-full hover:bg-white/20 transition-all border border-white/20">
+              <Link href="/services" className="px-10 py-4 bg-white/10 text-white font-semibold  hover:bg-white/20 transition-all border border-white/20">
                 Our Services
               </Link>
             </div>
@@ -116,7 +115,7 @@ export default function Home() {
           </motion.div>
         </div>
 
-        <SectionDivider color="#ffffff" position="bottom" />
+        
       </section>
 
       <section className="py-16 bg-white relative z-10">
@@ -126,7 +125,7 @@ export default function Home() {
               <motion.div 
                 key={index} 
                 variants={item}
-                className="text-center p-6 bg-primary/5 rounded-[2rem]"
+                className="text-center p-6 bg-primary/5 "
               >
                 <div className="text-3xl md:text-4xl font-display font-bold text-primary mb-1">{stat.value}</div>
                 <div className="text-gray-500 text-sm font-medium">{stat.label}</div>
@@ -134,7 +133,7 @@ export default function Home() {
             ))}
           </motion.div>
         </div>
-        <SectionDivider color="#F7F7F9" position="bottom" />
+        
       </section>
 
       {/* Services Section */}
@@ -164,7 +163,7 @@ export default function Home() {
                 variants={item}
                 className="p-8 bg-white rounded-[32px] transition-all group curved-card border border-gray-100"
               >
-                <div className="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                <div className="w-14 h-14 bg-primary/10  flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
                   <service.icon className="w-7 h-7 text-primary group-hover:text-white" />
                 </div>
                 <h3 className="text-xl font-display font-semibold text-secondary mb-3">{service.title}</h3>
@@ -208,9 +207,9 @@ export default function Home() {
               <motion.div 
                 key={index} 
                 variants={item}
-                className="text-center p-8 bg-white rounded-[2rem] border border-gray-100 curved-card transition-all"
+                className="text-center p-8 bg-white  border border-gray-100 curved-card transition-all"
               >
-                <div className="w-16 h-16 mx-auto mb-4 bg-primary/10 rounded-full flex items-center justify-center">
+                <div className="w-16 h-16 mx-auto mb-4 bg-primary/10  flex items-center justify-center">
                   <reason.icon className="w-8 h-8 text-primary" />
                 </div>
                 <h3 className="text-xl font-display font-semibold text-secondary mb-3">{reason.title}</h3>
@@ -219,7 +218,7 @@ export default function Home() {
             ))}
           </motion.div>
         </div>
-        <SectionDivider color="#ffffff" position="bottom" />
+        
       </section>
  
       {/* Branches Section */}
@@ -249,7 +248,7 @@ export default function Home() {
                 variants={item}
                 className="p-6 bg-primary/5 rounded-[2.5rem] hover:bg-primary/10 transition-colors curved-card border border-primary/10"
               >
-                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mb-4">
+                <div className="w-12 h-12 bg-primary  flex items-center justify-center mb-4">
                   <MapPin className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-lg font-display font-semibold text-secondary mb-2">{branch.name} Branch</h3>
@@ -267,7 +266,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <SectionDivider color="#0D7377" position="bottom" />
+        
       </section>
  
       <section className="section-padding bg-[#0D7377] relative z-10">
@@ -306,7 +305,7 @@ export default function Home() {
             ))}
           </motion.div>
         </div>
-        <SectionDivider color="#ffffff" position="bottom" />
+        
       </section>
  
       <section className="section-padding bg-white relative z-10">
