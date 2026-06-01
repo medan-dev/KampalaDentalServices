@@ -61,14 +61,14 @@ export default function ServicesPage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="page-hero relative overflow-hidden">
+      <section className="relative min-h-[70vh] flex flex-col items-center justify-center overflow-hidden text-center -mt-20 pb-20 pt-32">
         <div className="absolute inset-0">
           <img 
-            src="/clinic-chair.jpg" 
-            alt="State-of-the-art Dental Chair" 
-            className="w-full h-full object-cover brightness-[0.8] contrast-[1.1]"
+            src="/clinic-interior.jpg" 
+            alt="Kampala Dental Services Facilities" 
+            className="w-full h-full object-cover"
           />
-          {/* Overlay removed per user request */}
+          <div className="absolute inset-0 bg-black/50" />
         </div>
         <div className="page-hero-content relative z-10">
           <motion.div 
@@ -76,13 +76,13 @@ export default function ServicesPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            <span className="text-secondary font-bold text-sm uppercase tracking-wider hero-shadow">Our Services</span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mt-4 mb-6 hero-shadow">
-              Comprehensive <span className="text-secondary italic">Dental Care</span>
+            <span className="text-secondary font-bold text-sm uppercase tracking-wider">Our Services</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mt-4 mb-6">
+              Comprehensive <span className="text-secondary italic">Dental Solutions</span>
             </h1>
-            <p className="text-white max-w-3xl mx-auto text-lg leading-relaxed hero-shadow">
-              From routine cleanings to advanced oral surgery, our highly trained team 
-              is equipped to meet all your family's dental needs under one roof.
+            <p className="text-white max-w-3xl mx-auto text-lg leading-relaxed">
+              From routine checkups to advanced surgical procedures, we provide 
+              world-class dental care under one roof.
             </p>
           </motion.div>
         </div>
@@ -103,7 +103,7 @@ export default function ServicesPage() {
               <motion.div
                 key={index}
                 variants={item}
-                className="p-8 bg-neutral-light/50 rounded-[2.5rem] border border-gray-100 hover:border-primary/30 transition-all group hover:-translate-y-1"
+                className="p-8 bg-neutral-light/50 border border-gray-100 hover:border-primary/30 transition-all group hover:-translate-y-1"
               >
                 <div className="w-14 h-14 bg-white  border border-gray-100 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                   <service.icon className="w-7 h-7 text-primary" />

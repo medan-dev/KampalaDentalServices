@@ -7,12 +7,6 @@ import { Phone, Mail, MapPin, Clock, Facebook, Instagram } from "lucide-react";
 
 export function Footer() {
   const pathname = usePathname();
-  
-  // Determine the background color of the last section of the current page
-  // Color of the last section on each page — feeds the top divider so it blends seamlessly into the teal footer
-  const topColor =
-    pathname === "/branches" || pathname === "/contact" ? "#F7F7F9" : // Ends in light gray
-    "#ffffff"; // All other pages end in white
 
   return (
     <footer className="bg-primary text-white/80 relative">
@@ -21,11 +15,11 @@ export function Footer() {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
               <div className="relative w-14 h-14 bg-white  p-1 flex-shrink-0">
-                <Image 
-                  src="/logo.png" 
-                  alt="Kampala Dental Services Logo" 
+                <Image
+                  src="/logo.png"
+                  alt="Kampala Dental Services Logo"
                   fill
-                  className="object-contain" 
+                  className="object-contain"
                 />
               </div>
               <div>
@@ -45,7 +39,7 @@ export function Footer() {
               </a>
               <a href="#" className="w-10 h-10 bg-white/20  flex items-center justify-center hover:bg-white/30 transition-colors" aria-label="TikTok">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/>
+                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z" />
                 </svg>
               </a>
             </div>

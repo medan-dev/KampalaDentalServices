@@ -29,14 +29,14 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="page-hero relative overflow-hidden">
+      <section className="relative min-h-[70vh] flex flex-col items-center justify-center overflow-hidden text-center -mt-20 pb-20 pt-32">
         <div className="absolute inset-0">
           <img 
             src="/clinic-interior.jpg" 
             alt="Kampala Dental Services Clinic Interior" 
-            className="w-full h-full object-cover brightness-[0.8] contrast-[1.1]"
+            className="w-full h-full object-cover"
           />
-          {/* Overlay removed per user request */}
+          <div className="absolute inset-0 bg-black/50" />
         </div>
         <div className="page-hero-content relative z-10">
           <motion.div 
@@ -44,11 +44,11 @@ export default function AboutPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            <span className="text-secondary font-bold text-sm uppercase tracking-wider hero-shadow">About Us</span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mt-4 mb-6 hero-shadow">
+            <span className="text-secondary font-bold text-sm uppercase tracking-wider">About Us</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mt-4 mb-6">
               Modern Excellence in <span className="text-secondary italic">Dental Care</span>
             </h1>
-            <p className="text-white max-w-3xl mx-auto text-lg leading-relaxed hero-shadow">
+            <p className="text-white max-w-3xl mx-auto text-lg leading-relaxed">
               Serving Kampala for over 15 years with a commitment to clinical excellence,
               patient comfort, and state-of-the-art dental technology.
             </p>
@@ -68,7 +68,7 @@ export default function AboutPage() {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="aspect-[4/3] bg-neutral-light rounded-[32px] overflow-hidden border border-gray-100">
+              <div className="aspect-[4/3] bg-neutral-light overflow-hidden border border-gray-100">
                 <img 
                   src="/clinic-interior.jpg" 
                   alt="Kampala Dental Services Clinic Interior" 
@@ -118,7 +118,7 @@ export default function AboutPage() {
             className="grid grid-cols-2 lg:grid-cols-4 gap-8"
           >
             {stats.map((stat, idx) => (
-              <motion.div key={idx} variants={item} className="p-8 bg-neutral-light/50 border border-gray-100 rounded-[2.5rem] transition-all">
+              <motion.div key={idx} variants={item} className="p-8 bg-neutral-light/50 border border-gray-100 transition-all">
                 <div className="text-4xl md:text-5xl font-display font-bold text-primary mb-2">{stat.value}</div>
                 <div className="text-gray-500 font-medium">{stat.label}</div>
               </motion.div>
@@ -162,7 +162,7 @@ export default function AboutPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.2 }}
-                className="curved-card p-10 flex flex-col items-center text-center group hover:bg-neutral-light transition-colors border-none bg-white rounded-[2.5rem]"
+                className="clinical-card"
               >
                 <div className="w-16 h-16 bg-primary/10  flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                   <feature.icon className="w-6 h-6 text-primary" />
@@ -178,7 +178,7 @@ export default function AboutPage() {
       {/* CTA Section */}
       <section className="section-padding bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-primary-dark p-8 md:p-16 text-center text-white relative overflow-hidden rounded-[2.5rem] z-10 border border-white/10">
+          <div className="bg-primary-dark p-8 md:p-16 text-center text-white relative overflow-hidden z-10 border border-white/10">
             <div className="absolute top-0 right-0 w-64 h-64 bg-white/5  opacity-10" />
             <div className="absolute bottom-0 left-0 w-48 h-48 bg-secondary/5  opacity-10" />
             

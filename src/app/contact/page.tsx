@@ -68,14 +68,14 @@ export default function ContactPage() {
 
   return (
     <>
-      <section className="page-hero relative overflow-hidden">
+      <section className="relative min-h-[70vh] flex flex-col items-center justify-center overflow-hidden text-center -mt-20 pb-20 pt-32">
         <div className="absolute inset-0">
           <img 
             src="/clinic-interior.jpg" 
-            alt="Kampala Dental Services Reception" 
-            className="w-full h-full object-cover brightness-[0.8] contrast-[1.1]"
+            alt="Kampala Dental Services Contact" 
+            className="w-full h-full object-cover"
           />
-          {/* Overlay removed per user request */}
+          <div className="absolute inset-0 bg-black/50" />
         </div>
         <div className="page-hero-content relative z-10">
           <motion.div 
@@ -83,13 +83,13 @@ export default function ContactPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            <span className="text-secondary font-bold text-sm uppercase tracking-wider hero-shadow">Contact Us</span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mt-4 mb-6 hero-shadow">
-              Get In <span className="text-secondary italic">Touch Today</span>
+            <span className="text-secondary font-bold text-sm uppercase tracking-wider">Contact Us</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mt-4 mb-6">
+              We're Here to <span className="text-secondary italic">Help You</span>
             </h1>
-            <p className="text-white max-w-3xl mx-auto text-lg leading-relaxed hero-shadow">
-              Have a question or need more information? We'd love to hear from you.
-              Reach out through any of our channels.
+            <p className="text-white max-w-3xl mx-auto text-lg leading-relaxed">
+              Have a question or need to schedule an appointment? Our friendly team 
+              is ready to assist you 24/7.
             </p>
           </motion.div>
         </div>
@@ -103,7 +103,7 @@ export default function ContactPage() {
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="rounded-[2.5rem] p-8 md:p-12 bg-neutral-light/30 border-none"
+              className="p-8 md:p-12 bg-neutral-light/30 border-none"
             >
               <h2 className="text-3xl font-display font-bold text-primary mb-8">
                 Send Us a Message

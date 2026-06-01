@@ -63,14 +63,14 @@ const item = {
 export default function BranchesPage() {
   return (
     <>
-      <section className="page-hero relative overflow-hidden">
+      <section className="relative min-h-[70vh] flex flex-col items-center justify-center overflow-hidden text-center -mt-20 pb-20 pt-32">
         <div className="absolute inset-0">
           <img 
-            src="/clinic-exterior.jpg" 
-            alt="Kampala Dental Services Clinic Branch" 
-            className="w-full h-full object-cover brightness-[0.8] contrast-[1.1]"
+            src="/clinic-chair.jpg" 
+            alt="Kampala Dental Services Facilities" 
+            className="w-full h-full object-cover"
           />
-          {/* Overlay removed per user request */}
+          <div className="absolute inset-0 bg-black/50" />
         </div>
         <div className="page-hero-content relative z-10">
           <motion.div 
@@ -78,13 +78,13 @@ export default function BranchesPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            <span className="text-secondary font-bold text-sm uppercase tracking-wider hero-shadow">Our Locations</span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mt-4 mb-6 hero-shadow">
-              Visit Us at Any <span className="text-secondary italic">Clinic Branch</span>
+            <span className="text-secondary font-bold text-sm uppercase tracking-wider">Our Locations</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mt-4 mb-6">
+              World-Class Care <span className="text-secondary italic">Near You</span>
             </h1>
-            <p className="text-white max-w-3xl mx-auto text-lg leading-relaxed hero-shadow">
-              With three convenient locations across Kampala, quality dental care
-              is never far away. Choose the branch nearest to you.
+            <p className="text-white max-w-3xl mx-auto text-lg leading-relaxed">
+              With three modern clinical centers across Kampala, premium dental care 
+              is always within your reach.
             </p>
           </motion.div>
         </div>
@@ -104,7 +104,7 @@ export default function BranchesPage() {
               <motion.div
                 key={branch.id}
                 variants={item}
-                className="curved-card !p-0 border border-gray-100 bg-neutral-light/30  overflow-hidden transition-all"
+                className="card !p-0 border border-gray-100 bg-white overflow-hidden transition-all"
               >
                 <div className="grid lg:grid-cols-2">
                   <div className="p-8 lg:p-12">
@@ -189,7 +189,7 @@ export default function BranchesPage() {
                       allowFullScreen
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
-                      className="w-full h-full grayscale brightness-95 contrast-110 hover:grayscale-0 transition-all duration-700"
+                      className="w-full h-full"
                     />
                   </div>
                 </div>

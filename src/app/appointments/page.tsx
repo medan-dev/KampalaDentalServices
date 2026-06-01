@@ -324,14 +324,14 @@ function LoadingFallback() {
 export default function AppointmentsPage() {
   return (
     <>
-      <section className="page-hero relative overflow-hidden">
+      <section className="relative min-h-[70vh] flex flex-col items-center justify-center overflow-hidden text-center -mt-20 pb-20 pt-32">
         <div className="absolute inset-0">
           <img 
-            src="/clinic-chair.jpg" 
-            alt="Kampala Dental Services Treatment Room" 
-            className="w-full h-full object-cover brightness-[0.8] contrast-[1.1]"
+            src="/clinic-interior.jpg" 
+            alt="Kampala Dental Services Reception" 
+            className="w-full h-full object-cover"
           />
-          {/* Overlay removed per user request */}
+          <div className="absolute inset-0 bg-black/50" />
         </div>
         <div className="page-hero-content relative z-10">
           <motion.div 
@@ -339,13 +339,13 @@ export default function AppointmentsPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            <span className="text-secondary font-bold text-sm uppercase tracking-wider hero-shadow">Book Online</span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mt-4 mb-6 hero-shadow">
-              Schedule Your <span className="text-secondary italic">Dental Visit</span>
+            <span className="text-secondary font-bold text-sm uppercase tracking-wider">Book Online</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mt-4 mb-6">
+              Schedule Your <span className="text-secondary italic">Visit</span>
             </h1>
-            <p className="text-white max-w-3xl mx-auto text-lg leading-relaxed hero-shadow">
-              Take the first step towards a healthier, brighter smile. 
-              Book an appointment at a branch and time that works best for you.
+            <p className="text-white max-w-3xl mx-auto text-lg leading-relaxed">
+              Book your appointment online in minutes. Choose your preferred branch, 
+              service, and time that works best for you.
             </p>
           </motion.div>
         </div>

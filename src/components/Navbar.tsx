@@ -29,15 +29,15 @@ export function Navbar() {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 flex justify-center bg-white border-b border-gray-200 transition-all duration-300">
-      <header className="w-full bg-white py-3 px-6 lg:px-10 transition-all duration-300">
+    <div className="fixed top-0 left-0 right-0 z-50 bg-background-alt border-b border-neutral-light transition-all duration-300">
+      <header className="w-full max-w-7xl mx-auto py-3 px-4 sm:px-6 lg:px-8 transition-all duration-300">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 group">
             {/* Removed drop-shadow so the image's white background blends perfectly with the header */}
             <div className="group-hover:scale-105 transition-transform relative w-14 h-14 mix-blend-multiply">
-              <Image 
-                src="/logo.png" 
-                alt="Kampala Dental Services Logo" 
+              <Image
+                src="/logo.png"
+                alt="Kampala Dental Services Logo"
                 fill
                 className="object-contain"
                 priority
@@ -54,11 +54,10 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-sm font-medium transition-colors ${
-                  pathname === link.href
+                className={`text-sm font-medium transition-colors ${pathname === link.href
                     ? "text-primary font-semibold"
                     : "text-gray-600 hover:text-primary"
-                }`}
+                  }`}
               >
                 {link.label}
               </Link>
@@ -66,21 +65,30 @@ export function Navbar() {
           </nav>
 
           <div className="hidden lg:flex items-center gap-6">
-            <a
-              href="tel:+256702555000"
-              className="flex items-center gap-2 transition-colors text-gray-600 hover:text-primary"
-            >
-              <Phone size={18} className="text-primary" />
-              <span className="text-sm font-medium">+256 700 593 479</span>
-            </a>
-            <Link href="/appointments" className="btn-primary py-2 px-6">
+            <div className="flex flex-col gap-1">
+              <a
+                href="tel:+256700593479"
+                className="flex items-center gap-2 transition-colors text-gray-600 hover:text-primary"
+              >
+                <Phone size={16} className="text-primary" />
+                <span className="text-sm font-medium">+256 700 593 479</span>
+              </a>
+              <a
+                href="tel:+256775953799"
+                className="flex items-center gap-2 transition-colors text-gray-600 hover:text-primary"
+              >
+                <Phone size={16} className="text-primary" />
+                <span className="text-sm font-medium">+256 775 953 799</span>
+              </a>
+            </div>
+            <Link href="/appointments" className="btn-primary py-2.5 px-6 border border-primary/20">
               Book Now
             </Link>
           </div>
 
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden p-2  text-gray-600 hover:bg-gray-100"
+            className="lg:hidden p-2 text-gray-600 hover:bg-gray-100"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -92,7 +100,7 @@ export function Navbar() {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
-              className="lg:hidden bg-white border-b border-gray-200 absolute top-full left-0 right-0 overflow-hidden"
+              className="lg:hidden bg-background-alt border-b border-neutral-light absolute top-full left-0 right-0 overflow-hidden"
             >
               <div className="max-w-7xl mx-auto px-4 py-4 space-y-2">
                 {navLinks.map((link) => (
@@ -100,22 +108,28 @@ export function Navbar() {
                     key={link.href}
                     href={link.href}
                     onClick={() => setIsOpen(false)}
-                    className={`block py-3 px-4 text-base font-semibold ${
-                      pathname === link.href
+                    className={`block py-3 px-4 text-base font-semibold ${pathname === link.href
                         ? "text-primary bg-primary/5 border-l-4 border-primary"
                         : "text-gray-600 hover:bg-primary/5"
-                    }`}
+                      }`}
                   >
                     {link.label}
                   </Link>
                 ))}
                 <div className="pt-4 flex flex-col gap-3 px-4 pb-4">
                   <a
-                    href="tel:+256702555000"
-                    className="flex items-center justify-center gap-2 py-3 border-2 border-primary text-primary  font-bold"
+                    href="tel:+256700593479"
+                    className="flex items-center justify-center gap-2 py-3 border-2 border-primary text-primary font-bold"
                   >
                     <Phone size={18} />
                     +256 700 593 479
+                  </a>
+                  <a
+                    href="tel:+256775953799"
+                    className="flex items-center justify-center gap-2 py-3 border-2 border-primary text-primary font-bold"
+                  >
+                    <Phone size={18} />
+                    +256 775 953 799
                   </a>
                   <Link
                     href="/appointments"

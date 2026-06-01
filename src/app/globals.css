@@ -2,55 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --primary: #0D7377;
-  --primary-dark: #095456;
-  --secondary: #14FFEC;
-  --background: #ffffff;
-  --accent: #FF6B35;
-  --neutral-dark: #1A1A2E;
-  --neutral: #4A4A68;
-  --neutral-light: #F7F7F9;
-}
-
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: var(--font-dm-sans), system-ui, sans-serif;
-  background-color: var(--background);
-  color: var(--neutral);
+  font-family: var(--font-body), system-ui, sans-serif;
+  background-color: theme('colors.background');
+  color: theme('colors.dark');
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-playfair), Georgia, serif;
+  font-family: var(--font-heading), system-ui, sans-serif;
 }
 
 @layer components {
-  /* Strict Clinical Buttons */
+
+  /* OpenMRS Flat Buttons */
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 px-8 py-3 bg-primary text-white font-bold transition-all duration-300 hover:bg-primary-dark border border-transparent;
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-white font-bold transition-colors border border-primary hover:bg-primary-dark rounded-none shadow-none;
   }
-  
+
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 px-8 py-3 bg-white text-primary font-bold transition-all duration-300 hover:bg-neutral-light border border-gray-200;
-  }
-  
-  .btn-accent {
-    @apply inline-flex items-center justify-center gap-2 px-8 py-3 bg-accent text-white font-bold transition-all duration-300 hover:bg-accent-dark border border-transparent;
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-secondary text-white font-bold transition-colors border border-secondary hover:bg-green-700 rounded-none shadow-none;
   }
 
   .btn-outline {
-    @apply inline-flex items-center justify-center gap-2 px-8 py-3 border border-primary text-primary font-bold transition-all duration-300 hover:bg-primary hover:text-white;
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 border border-neutral-light bg-background-alt text-dark font-bold transition-colors hover:border-primary hover:text-primary rounded-none shadow-none;
   }
 
   /* Universal Flat Clinical Card */
   .clinical-card {
-    @apply bg-white border-[1px] border-primary/20 transition-all duration-200 p-8 shadow-sm rounded-none;
+    @apply bg-background-alt border border-neutral-light p-8 shadow-none rounded-none transition-colors;
   }
   .clinical-card:hover {
-    @apply border-[1px] border-primary shadow-md;
+    @apply border-primary;
   }
 
   .section-padding {
@@ -58,31 +44,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .font-display {
-    font-family: var(--font-playfair), Georgia, serif;
+    font-family: var(--font-heading), system-ui, sans-serif;
   }
 
   .font-heading {
-    font-family: var(--font-playfair), Georgia, serif;
+    font-family: var(--font-heading), system-ui, sans-serif;
   }
 
   .font-body {
-    font-family: var(--font-dm-sans), system-ui, sans-serif;
+    font-family: var(--font-body), system-ui, sans-serif;
   }
-
-  .page-hero {
-    @apply relative -mt-20 pt-[9rem] pb-[8rem] md:pt-[13rem] md:pb-[10rem] overflow-hidden bg-primary min-h-[50vh] md:min-h-[65vh] flex flex-col justify-center;
-  }
-
-  .page-hero-content {
-    @apply relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center;
-  }
-  
-  .section-divider {
-    @apply w-full h-auto block relative z-20;
-  }
-
-  .hero-shadow {
-    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6), 0 2px 4px rgba(0, 0, 0, 0.4);
-  }
-
 }
